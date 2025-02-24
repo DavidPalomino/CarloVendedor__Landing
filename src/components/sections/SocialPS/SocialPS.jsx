@@ -7,30 +7,35 @@ export const SocialPS = () => {
     <div className={styles.rectangle}>
       <div className={styles.header}>
         <div className={styles.header__squeare_text}>Usuarios reales</div>
-        <h1 className={styles.header__title}>Una plataforma para todos</h1>
+        <h1 className={styles.header__title}>Una plataforma para dealers</h1>
       </div>
       <div className={styles.content}>
-        <div className={styles.img}>
+        <div className={styles.content__img}>
           <img src={socialImg} />
         </div>
         <div className={styles.content_text}>
-          <img src={purpleThing} className={styles.prupleImg}/>
-          <div className={styles.text__container}>
-          <h1 className={styles.text__container_title}>
-            Negocios justos y conexiones reales para un mercado más inteligente.
-          </h1>
-          <p className={styles.text__container_paragraph}>
-            Forma parte de una red de dealers que negocian con confianza,
-            seguridad y visión estratégica. Da el siguiente paso y accede a
-            oportunidades exclusivas.
-          </p>
-          <p className={styles.text__container_paragraph}>
-          Tu próxima oportunidad está a un clic de distancia.</p>
-          <button className={styles.beDealer}>Quiero ser dealer</button>
-        </div>
+          <img src={purpleThing} className={styles.prupleImg} />
+          <div className={styles.container}>
+            <div className={styles.text__container}>
+              <h1 className={styles.text__container_title}>
+                Que tu negocio no pare: compra autos verificados
+              </h1>
+              <p className={styles.text__container_paragraph}>
+                En CARLO, subastamos vehículos inspeccionados directamente de
+                particulares, para que puedas comprar con confianza y garantía.
+                No subastamos vehículos siniestrados ni recuperados por
+                financieras, solo vehículos verificados.
+              </p>
+              <p className={styles.text__container_paragraph}>
+                Tu próxima oportunidad está a un clic de distancia.
+              </p>
+            </div>
+            <button className={styles.beDealer}>Quiero ser dealer</button>
+          </div>
         </div>
       </div>
       <div className={styles.brands}>
+        
       </div>
     </div>
   );
