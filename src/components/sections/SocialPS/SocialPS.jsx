@@ -1,6 +1,7 @@
 import styles from "./SocialPS.module.css";
 import socialImg from "../../../assets/images/SocialImg.svg";
 import purpleThing from "../../../assets/images/purpleThing.svg";
+import VolkswagenLogo from "../../../assets/images/Volkswagen.svg";
 
 export const SocialPS = () => {
   return (
@@ -34,9 +35,20 @@ export const SocialPS = () => {
           </div>
         </div>
       </div>
-      <div className={styles.brands}>
-        
-      </div>
+      <li className={styles.brands}>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+          <img src={VolkswagenLogo}/>
+      </li>
     </div>
   );
 };
