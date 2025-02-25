@@ -46,15 +46,15 @@ export const Header = () => {
           >
             Quiero ser dealer
           </button>
-          {!isMenuOpen ? (
-            <button onClick={openMenu} className={styles.menuButton}>
-              Menu <img src={menuIcon} className={styles.menuIcon} />
-            </button>
-          ) : (
-            <button onClick={openMenu} className={styles.menuButton}>
-              Cerrar <img src={closeIcon} className={styles.menuIcon} />
-            </button>
-          )}
+          <button onClick={openMenu} className={`${styles.menuButton} ${!isTransparent && styles.visibleBorder}`}>
+            <span className={styles.textWrapper}>
+              {!isMenuOpen ? "Menú" : "Cerrar"}
+            </span>
+            <img
+              src={!isMenuOpen ? menuIcon : closeIcon}
+              className={styles.menuIcon}
+            />
+          </button>
         </div>
       </div>
       {isMenuOpen && <Menu />}

@@ -1,5 +1,140 @@
-.rectangle{ 
-    background-color: green;
-    width: 100%;
-    height: 4035px;
+.rectangle {
+  margin-top: 6rem;
+  width: 100%;
+  height: 4035px;
+}
+
+.header {
+  background-image: url("../../../assets/images/HeaderBackground.svg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 77rem;
+  height: 26.25rem;
+}
+
+.header__squeare_text {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6.25rem;
+  padding: 0.875rem 1.25rem;
+  line-height: 1rem;
+  font-family: Poppins;
+  color: #141414;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header__title {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: Inter;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -0.05rem;
+  margin-top: 0.81rem;
+  margin-bottom: 0;
+  width: 60%;
+}
+
+.steps{
+  display:flex;
+  flex-direction: column;
+  gap: 12.12rem;
+}
+
+.steps__one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.content__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 1);
+    width: 41.125rem;
+    height: 24.6875rem;
+    border-radius: 2rem;
+    box-shadow: 0px 40px 40px 0px rgba(20, 20, 20, 0.04);
+}
+
+.content__number {
+  height: 44%;
+  color: #4842fb;
+  font-family: Poppins;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  margin-top: 0; 
+}
+
+.container__text{
+    width: 65%;
+}
+
+.container__text__title {
+  color: #4842fb;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 2.75rem */
+  letter-spacing: -0.05rem;
+}
+
+.container__text__paragraph {
+  color: #444;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 0;
+}
+
+.container__text__anchor {
+  color: #4842fb;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 1.6875rem */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.steps__two{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepTwo__container__color{
+  background-color: #4842FB;
+}
+
+.stepTwo__number__color{
+  color: #D3FF3C;
+}
+
+.stepTwo__title__color{
+  color: #D3FF3C;
+}
+
+.stepTwo__paragraph__color{
+  color: #FFF;
+}
+
+.stepTwo__anchor__color{
+  color: #D3FF3C;
 }
