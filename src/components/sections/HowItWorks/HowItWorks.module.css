@@ -12,6 +12,7 @@
   justify-content: center;
   width: 77rem;
   height: 26.25rem;
+  margin-bottom: 4.12rem;
 }
 
 .header__squeare_text {
@@ -128,15 +129,14 @@
 
 .macImg{
   position: relative;
-  right: 4rem;
-  scale: 1.1;
+  right: 1rem;
 
 }
 .steps__two {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.81rem
 }
 
 .stepTwo__container__color {
