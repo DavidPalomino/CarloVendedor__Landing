@@ -1,10 +1,40 @@
 import styles from "./HowItWorks.module.css";
+import { useEffect, useRef } from "react";
+
 import stepOneImg from "../../../assets/images/StepOne.svg";
 import stepTwoImg from "../../../assets/images/StepTwo.svg";
 import stepThreeImg from "../../../assets/images/StepThree.svg";
 import stepFourImg from "../../../assets/images/StepFour.svg";
-
+import checkIcon from "../../../assets/images/CheckIcon.svg";
+import socialVideo from "../../../assets/videos/SocialVideo.mp4";
 export const HowItWorks = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            videoRef.current.play().catch(error => console.error("Error al reproducir:", error));
+          }, 200);
+        } else {
+          videoRef.current.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+  
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+  
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className={styles.rectangle}>
       <div className={styles.header}>
@@ -112,7 +142,7 @@ export const HowItWorks = () => {
                 <a
                   className={`${styles.container__text__anchor} ${styles.stepTwo__anchor__color}`}
                 >
-                  Regístrate ahora
+                  Quiero ser dealer
                 </a>
               </div>
             </div>
@@ -120,6 +150,29 @@ export const HowItWorks = () => {
           <div>
             <img src={stepFourImg} />
           </div>
+        </div>
+      </div>
+      <div className={styles.user}>
+        <div className={styles.user__container}>
+          <div className={styles.user__content}>
+            <img src={checkIcon} className={styles.user__content__icon}/>
+            <div className={styles.user__content__text}>
+            <h1 className={styles.user__content__title}>Te contamos cómo comprar con total seguridad</h1>
+            <p className={styles.user__content__paragraph}>Aprende en minutos cómo registrarte, explorar el stock de vehículos y participar en subastas en tiempo real. </p>
+            <p className={styles.user__content__paragraph}>Descubre lo fácil y seguro que es comprar autos verificados para tu negocio.</p>
+            </div>
+            <button className={styles.beDealer}>Quiero ser dealer</button>
+          </div>
+          <section className={styles.video__container}>
+              <video
+                className={styles.video}
+                ref={videoRef}
+                playsInline
+                loop
+              >
+                <source src={socialVideo} type="video/mp4" />
+              </video>
+          </section>
         </div>
       </div>
     </div>
