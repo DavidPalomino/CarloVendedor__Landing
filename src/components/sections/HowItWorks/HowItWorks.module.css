@@ -221,9 +221,10 @@
 .video__container {
   display: flex;
   align-items: center;
+  
 }
 
 .video {
-  width: 100%;
+  width: 25.75rem;
   border-radius: 1.25rem;
 }

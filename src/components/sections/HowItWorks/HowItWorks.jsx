@@ -36,7 +36,7 @@ export const HowItWorks = () => {
   }, []);
 
   return (
-    <div className={styles.rectangle}>
+    <section className={styles.rectangle}>
       <div className={styles.header}>
         <div className={styles.header__squeare_text}>Nuestro proceso</div>
         <h1 className={styles.header__title}>¿Cómo convertirte en dealer?</h1>
@@ -175,6 +175,6 @@ export const HowItWorks = () => {
           </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
