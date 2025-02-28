@@ -4,21 +4,20 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 750px;
     width: 100%;
     margin-top: 6.94rem;
   }
 
 
-.heroContent {
+.CTA__content {
     max-width: 1232px;
     width: 100%;
   }
   
   
-  .text {
-    width: 74%;
-    padding-top: 9.1rem;
+  .text ,.text__jump {
     font-family: Inter;
     font-size: 4rem;
     line-height: 4.5rem;
@@ -28,10 +27,26 @@
     color: white;
     z-index: 0;
   }
+
+  .text__jump{
+    color: #4842FB;
+  }
   
+  .text__paragraph{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    width: 56%;
+    margin-top: 1.56rem;
+
+  }
+
   .beDealerButton {
     background-color: #d3ff3c;
-    margin-top: 1.9rem;
+    margin-top: 7.56rem;
     padding: 18px 34px;
     border-radius: 20px;
     border: none;
@@ -46,10 +61,10 @@
   .backLetters{
     background-color: #D3FF3C;
     height: 4.625rem;
-    left: -0.9rem;
+    left: -0.5rem;
     position: absolute;
     z-index: -1;
     margin-top: 0.3rem;
-    width: 49.0625rem;
+    width: 48.0625rem;
     transform: rotate(0.447deg);
 }
