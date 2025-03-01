@@ -13,6 +13,7 @@ import tiktokIcon from "../../../assets/images/icons/TikTokGrayIcon.svg";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTransparent, setIsTransparent] = useState(true);
+  const [aux, setAux] = useState(true)
 
   const openMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,8 +22,10 @@ export const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
+        setAux(false)
         setIsTransparent(false);
       } else {
+        setAux(true)
         setIsTransparent(true);
       }
     };
@@ -31,10 +34,13 @@ export const Header = () => {
       setIsTransparent(false)
       document.body.style.overflow = "hidden";
     } else {
+      if(aux == isTransparent){
+      setIsTransparent(false)
+    }else{
       setIsTransparent(true)
+    }
       document.body.style.overflow = "auto";
     }
-
     window.addEventListener("scroll", handleScroll);
     
     return () => window.removeEventListener("scroll", handleScroll);
