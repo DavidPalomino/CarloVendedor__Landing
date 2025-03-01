@@ -1,10 +1,14 @@
 import styles from "./Header.module.css";
 import { useState, useEffect } from "react";
-import { Menu } from "../Menu/Menu";
 
 import logo from "../../../assets/images/Logo.svg";
 import menuIcon from "../../../assets/images/MenuIcon.svg";
 import closeIcon from "../../../assets/images/CloseIcon.svg";
+import menuItemOne from "../../../assets/images/Menu__First__Item.svg";
+import menuItemTwo from "../../../assets/images/Menu__Secont__Item.svg";
+import fbIcon from "../../../assets/images/icons/FbGrayIcon.svg";
+import igIcon from "../../../assets/images/icons/IgGrayIcon.svg";
+import tiktokIcon from "../../../assets/images/icons/TikTokGrayIcon.svg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,11 +27,21 @@ export const Header = () => {
       }
     };
 
+    if (isMenuOpen) {
+      setIsTransparent(false)
+      document.body.style.overflow = "hidden";
+    } else {
+      setIsTransparent(true)
+      document.body.style.overflow = "auto";
+    }
+
     window.addEventListener("scroll", handleScroll);
+    
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMenuOpen]);
 
   return (
+    <>
     <div
       className={`${styles.headerSection} ${
         isTransparent ? styles.transparent : styles.solid
@@ -57,7 +71,40 @@ export const Header = () => {
           </button>
         </div>
       </div>
-      {isMenuOpen && <Menu />}
     </div>
+    {isMenuOpen ? (
+      <div className={styles.menu}>
+        <div className={styles.menu__container}>
+        <div className={styles.menu__content}>
+          <section className={styles.items__section}>
+           <div className={styles.item}>
+             <img src={menuItemOne}/>
+           </div>
+           <div className={styles.item}>
+           <img src={menuItemTwo}/>
+           </div>
+         </section>
+         <section className={styles.links__content}>
+          <section className={styles.text__items}>
+          <p className={styles.item__text}>Servicios</p>
+          <p className={styles.item__text}>Subastas</p>
+          <p className={styles.item__text}>¿Cómo vender mi auto?</p>
+          <p className={styles.item__text}>¿Cómo ser Dealer?</p>
+          <p className={styles.item__text}>Premios y certificados</p>
+          <p className={styles.item__text}>Preguntas frecuentes</p>
+          </section>
+          <section className={styles.social__icons}>
+            <a href="#" className={styles.icon}> <img src={fbIcon} /> </a>
+            <a href="#" className={styles.icon}> <img src={igIcon} /> </a>
+            <a href="#" className={styles.icon}> <img src={tiktokIcon} /> </a>
+          </section>
+      </section>
+        </div>
+        </div>
+      </div>
+    ) : (
+      <></>
+    )}
+    </>
   );
 };
