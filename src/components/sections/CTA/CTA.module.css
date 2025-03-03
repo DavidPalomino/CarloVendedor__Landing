@@ -75,16 +75,21 @@
   .CTAimg{
     background-image: url("/src/assets/images/CTAImageMobile.svg");
   }
+
   .text ,.text__jump {
     font-size: 2.5rem;
     letter-spacing: -0.08rem;
     line-height: 3rem;
+    margin: 0;
+    padding: 0;
   }
 
   .text__paragraph{
     font-size: 0.875rem;
     line-height: 1.225rem;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .backLetters{
@@ -103,7 +108,7 @@
     transform: rotate(-0.942deg);
   }
   
-  .backLetters{
+  .beDealerButton{
     padding: 1.125rem 1.5rem;
     font-size: 1rem;
     line-height: 1.4rem;
