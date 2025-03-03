@@ -75,8 +75,8 @@
 
 @media (max-width: 768px) {
   .heroImg {
-    background-position: right;
-  }
+    background-image: url('../../../assets/images/HeroMobileBackground.svg');
+    }
 
   .heroContent {
     margin-left: 16px;

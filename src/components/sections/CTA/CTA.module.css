@@ -10,12 +10,15 @@
     margin-top: 6.94rem;
   }
 
-
 .CTA__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
     max-width: 1232px;
-    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
   }
-  
   
   .text ,.text__jump {
     font-family: Inter;
@@ -29,6 +32,7 @@
   }
 
   .text__jump{
+    position: relative;
     color: #4842FB;
   }
   
@@ -41,7 +45,6 @@
     line-height: 140%;
     width: 56%;
     margin-top: 1.56rem;
-
   }
 
   .beDealerButton {
@@ -64,6 +67,45 @@
     position: absolute;
     z-index: -1;
     margin-top: 0.3rem;
-    width: 48.0625rem;
+    width: 102%;
     transform: rotate(0.447deg);
+}
+
+@media (max-width: 768px) {
+  .CTAimg{
+    background-image: url("/src/assets/images/CTAImageMobile.svg");
+  }
+  .text ,.text__jump {
+    font-size: 2.5rem;
+    letter-spacing: -0.08rem;
+    line-height: 3rem;
+  }
+
+  .text__paragraph{
+    font-size: 0.875rem;
+    line-height: 1.225rem;
+    width: 100%;
+  }
+
+  .backLetters{
+    height: 2.875rem;
+  }
+
+  .backTop {
+    width: 107%;
+    margin-top: 0.3rem;
+    transform: rotate(1.166deg);
+  }
+  
+  .backBottom {
+    width: 108%;
+    margin-top: 0.2rem;
+    transform: rotate(-0.942deg);
+  }
+  
+  .backLetters{
+    padding: 1.125rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }

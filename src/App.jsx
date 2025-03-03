@@ -31,17 +31,20 @@ function App() {
     <>
     <Header  windowSize={windowSize}/>
     <HeroSection windowSize={windowSize}/>
-    {windowSize.width > 768 ? 
+    {windowSize.width > 768 ? (
+    <div>
     <main className="container">
     <SocialPS windowSize={windowSize}/>
     <HowItWorks windowSize={windowSize}/>
-    <CTA/>
-    </main>: 
+    </main>
+    <CTA windowSize={windowSize}/>
+    </div>
+     ) : (
     <div>
       <SocialPS windowSize={windowSize}/>
       <HowItWorks windowSize={windowSize}/>
-      {/* <CTA/> */}
-      </div>}
+      <CTA windowSize={windowSize}/>
+      </div>)}
     {/* <Footer/> */}
     </>
   )

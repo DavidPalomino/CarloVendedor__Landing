@@ -34,7 +34,7 @@ export const Header = ({windowSize}) => {
       setIsTransparent(false)
       document.body.style.overflow = "hidden";
     } else {
-      if(aux == isTransparent){
+      if(aux == false && isTransparent == false){
       setIsTransparent(false)
     }else{
       setIsTransparent(true)
