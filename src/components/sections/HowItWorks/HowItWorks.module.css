@@ -36,8 +36,7 @@
   font-weight: 600;
   line-height: 4rem;
   letter-spacing: -0.05rem;
-  margin-top: 0.81rem;
-  margin-bottom: 0;
+  margin: 0;
   width: 60%;
 }
 
@@ -265,6 +264,7 @@
 
   .content__number {
     font-size: 4rem;
+    line-height: 4rem;
     margin: 0;
     padding: 0;
   }
