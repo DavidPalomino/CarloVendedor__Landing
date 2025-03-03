@@ -37,7 +37,7 @@ export const SocialPS = ({windowSize}) => {
         </div>
       </div>
       <div>
-      {/* <BrandCarrusel/> */}
+      <BrandCarrusel/>
       </div>
     </div>
   );
