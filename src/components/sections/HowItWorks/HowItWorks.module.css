@@ -261,10 +261,6 @@
     display: none;
   }
 
-  .content__text {
-    height: auto;
-  }
-
   .content__number {
     font-size: 4rem;
   }
