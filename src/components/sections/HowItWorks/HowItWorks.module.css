@@ -318,8 +318,8 @@
   .video__container {
     margin: 0 16px;
   }
-
+  
   .video {
-    width: 100%;
+    width: -webkit-fill-available;
   }
 }
