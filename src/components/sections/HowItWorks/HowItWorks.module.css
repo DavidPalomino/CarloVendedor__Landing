@@ -265,6 +265,8 @@
 
   .content__number {
     font-size: 4rem;
+    margin: 0;
+    padding: 0;
   }
 
   .text__container {
