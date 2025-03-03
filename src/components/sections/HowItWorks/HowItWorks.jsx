@@ -56,7 +56,7 @@ export const HowItWorks = ({windowSize}) => {
               <h1 className={styles.content__number}>1</h1>
               <div className={styles.container__text}>
                 <h1 className={styles.container__text__title}>
-                  Regístrate y verifica {windowSize.width <= 768 ? <br/>:""}tu cuenta
+                  Regístrate y verifica tu cuenta
                 </h1>
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos

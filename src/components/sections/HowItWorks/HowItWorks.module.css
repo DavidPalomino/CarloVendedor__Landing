@@ -60,7 +60,9 @@
   align-items: center;
   gap: 2.5rem;
   background-color: rgba(255, 255, 255, 1);
-  width: 41.125rem;
+  width: 100%;
+  max-width: 658px;
+  min-height: 368px;
   height: auto;
   padding: 4.38rem 2rem;
   border-radius: 2rem;
@@ -262,7 +264,7 @@
   }
 
   .content__text {
-    padding: 2rem;
+    padding: 2rem 2.5rem;
   }
 
   .content__number {
