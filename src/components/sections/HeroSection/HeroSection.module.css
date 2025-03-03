@@ -50,6 +50,7 @@
   font-size: 1.25rem;
   line-height: 140%;
   font-style: normal;
+  color: black;
 }
 
 .backLetters {
@@ -74,7 +75,7 @@
 
 @media (max-width: 768px) {
   .heroImg {
-    background-image: url("/src/assets/images/HeroMobileBackground.svg");
+    background-position: right;
   }
 
   .heroContent {

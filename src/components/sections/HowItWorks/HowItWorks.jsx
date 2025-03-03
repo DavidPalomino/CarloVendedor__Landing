@@ -61,7 +61,7 @@ export const HowItWorks = ({windowSize}) => {
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos
                   verificados. Completa tu registro y verifica tu cuenta para
-                  comenzar el proceso ¡Es gratis!
+                  comenzar el proceso <b>¡Es gratis!</b>
                 </p>
                 <a className={styles.container__text__anchor}>
                   Regístrate ahora
@@ -93,8 +93,8 @@ export const HowItWorks = ({windowSize}) => {
                 >
                   Accede a nuestro catálogo de vehículos verificados con 180
                   puntos de inspección y revisa fotos, estado mecánico, estético
-                  y legal antes de pujar. ¡Encuentra la mejor opción para tu
-                  negocio!
+                  y legal antes de pujar. <b>¡Encuentra la mejor opción para tu
+                  negocio!</b>
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1
                   className={`${styles.container__text__title} ${styles.stepTwo__title__color}`}
                 >
-                  Completa la compra y recoge tu auto{" "}
+                  Completa la compra y recoge tu auto
                 </h1>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
