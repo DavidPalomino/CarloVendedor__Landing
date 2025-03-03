@@ -56,14 +56,11 @@ export const Header = ({windowSize}) => {
       <div className={styles.content}>
         <img
           src={logo}
-          className={!isTransparent ? styles.invertLogoColor : {}}
+          className={`${styles.header__logo} ${(!isTransparent ? styles.invertLogoColor : {})}`}
         />
+        {windowSize.width > 393 ? (
         <div className={styles.buttons}>
-          <button
-            className={`${styles.beDealer} ${
-              isTransparent ? styles.hidden : styles.visible
-            }`}
-          >
+          <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
             Quiero ser dealer
           </button>
           <button onClick={openMenu} className={`${styles.menuButton} ${!isTransparent && styles.visibleBorder}`}>
@@ -76,6 +73,26 @@ export const Header = ({windowSize}) => {
             />
           </button>
         </div>
+        ):(
+          <div className={styles.buttons}>
+          <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
+            Quiero ser dealer
+          </button>
+          
+          <button onClick={openMenu} className={`${styles.menuButton} ${ isTransparent ? styles.hidden : styles.visibleMenuButton}`}>
+          <img
+              src={menuIcon}
+              className={`${styles.menuIcon} ${!isTransparent && styles.visibleImg}`}/>
+          </button>
+
+          <button onClick={openMenu} className={`${styles.menuButton} ${!isTransparent && styles.hidden}`}>
+            Menú
+              <img
+              src={menuIcon}
+              className={`${styles.menuIcon} ${!isTransparent && styles.hidden}`}/>
+          </button>
+          </div>
+      )}
       </div>
     </div>
     {isMenuOpen ? (

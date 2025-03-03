@@ -36,7 +36,8 @@
   font-family: Poppins;
   font-size: 1rem;
   font-weight: 500;
-  transition: opacity 0.5s ease;
+  transition: all 0.5s ease;
+  width: auto;
 }
 
 .menuButton {
@@ -54,7 +55,8 @@
   font-size: 0.9375rem;
   font-style: normal;
   border: 1px solid transparent;
-  transition: border 0.5s ease;
+  transition: opacity 0.5s ease;
+  width: auto;
 }
 
 .textWrapper {
@@ -68,6 +70,8 @@
   cursor: pointer;
   width: 1rem;
   height: 1rem;
+  transition: all 0.2s ease;
+
 }
 
 .solid {
@@ -168,4 +172,49 @@
 
 .icon img{
   width: 1.25rem;
+}
+
+@media (max-width: 393px) {
+  .header__logo{
+    width: 5.75rem;
+  }
+
+  .buttons{
+    gap: 0.5rem;
+  }
+
+  .content{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .menuButton{
+    font-size: 0.8125rem;
+    transition: all 0.2s ease;
+  }
+
+  .beDealer{
+    font-size: 0.8125rem;
+    padding: 0;
+    border: none;
+    transition: all 0.5s ease;
+  }
+
+  .hidden{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .visible{
+    padding: 0.625rem 0.75rem;
+  }
+
+  .visibleMenuButton{
+    border: 1px solid #141414;
+  }
+
+  .visibleImg{
+    padding: 0.18 0.11rem;
+  }
 }
