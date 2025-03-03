@@ -57,6 +57,7 @@
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 140%;
+  color: black;
     font-style: normal;
   }
   
@@ -74,6 +75,8 @@
 @media (max-width: 768px) {
   .CTAimg{
     background-image: url("/src/assets/images/CTAImageMobile.svg");
+    background-size: cover;
+    height: 485px;
   }
 
   .text ,.text__jump {
@@ -88,7 +91,7 @@
     font-size: 0.875rem;
     line-height: 1.225rem;
     width: 100%;
-    margin: 0;
+    margin: 1.56rem 0 0 0;
     padding: 0;
   }
 
@@ -112,5 +115,7 @@
     padding: 1.125rem 1.5rem;
     font-size: 1rem;
     line-height: 1.4rem;
+    margin-top: 5.35rem;
+
   }
 }
