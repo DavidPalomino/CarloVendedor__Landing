@@ -1,5 +1,5 @@
 import styles from "./HowItWorks.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import stepOneImg from "../../../assets/images/StepOne.svg";
 import stepTwoImg from "../../../assets/images/StepTwo.svg";
@@ -9,6 +9,7 @@ import checkIcon from "../../../assets/images/CheckIcon.svg";
 import socialVideo from "../../../assets/videos/SocialVideo.mp4";
 export const HowItWorks = ({windowSize}) => {
   const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,6 +36,13 @@ export const HowItWorks = ({windowSize}) => {
     };
   }, []);
 
+
+  const handleToggleSound = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(videoRef.current.muted);
+    }
+  };
   return (
     <section className={styles.rectangle}>
       <div className={styles.header}>
@@ -167,7 +175,7 @@ export const HowItWorks = ({windowSize}) => {
            {windowSize.width <= 768 ? 
            <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
             : ""}
-          <section className={styles.video__container}>
+          <section className={styles.video__container} onClick={handleToggleSound}>
               <video className={styles.video}
                 ref={videoRef}
                 playsInline
