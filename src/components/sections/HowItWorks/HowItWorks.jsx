@@ -167,14 +167,14 @@ export const HowItWorks = ({windowSize}) => {
            {windowSize.width <= 768 ? 
            <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
             : ""}
-          <section className={styles.video__container}>
+          {/* <section className={styles.video__container}>
               <video className={styles.video}
                 ref={videoRef}
                 playsInline
                 loop>
                 <source src={socialVideo} type="video/mp4" />
               </video>
-          </section>
+          </section> */}
         </div>
       </div>
     </section>
