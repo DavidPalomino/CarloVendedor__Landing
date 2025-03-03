@@ -171,6 +171,7 @@ export const HowItWorks = ({windowSize}) => {
               <video className={styles.video}
                 ref={videoRef}
                 playsInline
+                muted
                 loop>
                 <source src={socialVideo} type="video/mp4" />
               </video>
