@@ -7,7 +7,7 @@ import stepThreeImg from "../../../assets/images/StepThree.svg";
 import stepFourImg from "../../../assets/images/StepFour.svg";
 import checkIcon from "../../../assets/images/CheckIcon.svg";
 import socialVideo from "../../../assets/videos/SocialVideo.mp4";
-export const HowItWorks = () => {
+export const HowItWorks = ({windowSize}) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export const HowItWorks = () => {
               <h1 className={styles.content__number}>1</h1>
               <div className={styles.container__text}>
                 <h1 className={styles.container__text__title}>
-                  Regístrate y verifica tu cuenta
+                  Regístrate y verifica {windowSize.width <= 430 ? <br/>:""}tu cuenta
                 </h1>
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos
@@ -66,8 +66,7 @@ export const HowItWorks = () => {
           </div>
         </div>
         <div className={styles.steps__two}>
-          <div
-            className={`${styles.content__text} $ ${styles.stepTwo__container__color}`}
+          <div className={`${styles.content__text} $ ${styles.stepTwo__container__color}`}
           >
             <div className={styles.text__container}>
               <h1
@@ -79,7 +78,7 @@ export const HowItWorks = () => {
                 <h1
                   className={`${styles.container__text__title} ${styles.stepTwo__title__color}`}
                 >
-                  Explora nuestro stock de vehículos
+                  Explora nuestro{windowSize.width <= 430 ? <br/>:""} stock de vehículos
                 </h1>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
@@ -101,8 +100,8 @@ export const HowItWorks = () => {
             <div className={styles.text__container}>
               <h1 className={styles.content__number}>3</h1>
               <div className={styles.container__text}>
-                <h1 className={styles.container__text__title}>
-                  Empieza a pujar desde cualquier dispositivo en tiempo real{" "}
+                <h1 className={`${styles.container__text__title} ${styles.step__three__mobile__title}`}>
+                  Empieza a pujar desde cualquier dispositivo en tiempo real
                 </h1>
                 <p className={styles.container__text__paragraph}>
                   Desde tu celular, tablet o computadora, puja en tiempo real en
@@ -154,6 +153,7 @@ export const HowItWorks = () => {
       </div>
       <div className={styles.user}>
         <div className={styles.user__container}>
+          {windowSize.width > 430 ?
           <div className={styles.user__content}>
             <img src={checkIcon} className={styles.user__content__icon}/>
             <div className={styles.user__content__text}>
@@ -163,13 +163,15 @@ export const HowItWorks = () => {
             </div>
             <button className={styles.beDealer}>Quiero ser dealer</button>
           </div>
+           : ""}
+           {windowSize.width <= 430 ? 
+           <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
+            : ""}
           <section className={styles.video__container}>
-              <video
-                className={styles.video}
+              <video className={styles.video}
                 ref={videoRef}
                 playsInline
-                loop
-              >
+                loop>
                 <source src={socialVideo} type="video/mp4" />
               </video>
           </section>

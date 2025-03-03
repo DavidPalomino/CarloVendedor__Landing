@@ -58,7 +58,7 @@ export const Header = ({windowSize}) => {
           src={logo}
           className={`${styles.header__logo} ${(!isTransparent ? styles.invertLogoColor : {})}`}
         />
-        {windowSize.width > 393 ? (
+        {windowSize.width >= 430 ? (
         <div className={styles.buttons}>
           <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
             Quiero ser dealer

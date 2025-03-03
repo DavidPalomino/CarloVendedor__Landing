@@ -33,9 +33,9 @@ function App() {
     <HeroSection windowSize={windowSize}/>
     <main className="container">
     <SocialPS windowSize={windowSize}/>
+    <HowItWorks windowSize={windowSize}/>
     </main>
-    {/* <HowItWorks/>
-    <CTA/>
+    {/* <CTA/>
     <Footer/> */}
     </>
   )

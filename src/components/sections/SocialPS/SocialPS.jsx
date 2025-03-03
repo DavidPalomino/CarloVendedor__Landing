@@ -16,7 +16,7 @@ export const SocialPS = ({windowSize}) => {
           <img src={socialImg} />
         </div>
         <div className={styles.content_text}>
-          <img src={windowSize > 393 ? purpleThing : prupleImgMobile} className={styles.prupleImg} />
+          <img src={windowSize > 430 ? purpleThing : prupleImgMobile} className={styles.prupleImg} />
           <div className={styles.container}>
             <div className={styles.text__container}>
               <h1 className={styles.text__container_title}>
@@ -36,7 +36,7 @@ export const SocialPS = ({windowSize}) => {
           </div>
         </div>
       </div>
-      <div className={styles.carrusel}>
+      <div>
       <BrandCarrusel/>
       </div>
     </div>

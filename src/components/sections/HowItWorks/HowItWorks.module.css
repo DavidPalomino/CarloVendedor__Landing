@@ -11,9 +11,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 77rem;
+  width: 100%;
   height: 26.25rem;
   margin-bottom: 4.12rem;
+  overflow: hidden;
 }
 
 .header__squeare_text {
@@ -156,7 +157,7 @@
 }
 
 .user__container {
-  margin-top: 5.50rem;
+  margin-top: 5.5rem;
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
@@ -172,11 +173,11 @@
   padding: 3.75rem;
 }
 
-.user__content__icon{
+.user__content__icon {
   margin-bottom: 0.75rem;
 }
 
-.user__content__text{
+.user__content__text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -199,7 +200,7 @@
 .user__content__paragraph {
   color: #444;
   font-family: Poppins;
-  font-size: 1.30rem;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -221,10 +222,101 @@
 .video__container {
   display: flex;
   align-items: center;
-  
 }
 
 .video {
   width: 25.75rem;
   border-radius: 1.25rem;
+}
+
+@media (max-width: 430px) {
+  .header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10rem;
+    height: 19.62525rem;
+    overflow: hidden;
+  }
+  .header__squeare_text {
+    padding: 0.75rem 1rem;
+  }
+
+  .header__title {
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+    width: 100%;
+  }
+
+  .steps {
+    gap: 3.12rem;
+  }
+  .steps__one,
+  .steps__two {
+    gap: 0rem;
+    margin: 0 1rem;
+  }
+  .steps__one img,
+  .steps__two img {
+    display: none;
+  }
+
+  .content__text {
+    height: auto;
+  }
+
+  .content__number {
+    font-size: 4rem;
+  }
+
+  .text__container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.25rem;
+  }
+
+  .container__text {
+    width: 100%;
+    height: auto;
+  }
+
+  .container__text__title {
+    font-size: 1.875rem;
+    margin-top: 0;
+    letter-spacing: -0.05rem;
+    line-height: 2.0625rem;
+  }
+  .step__three__mobile__title {
+    font-size: 1.6875rem;
+  }
+
+  .container__text__paragraph {
+    font-size: 0.9375rem;
+    line-height: 1.40625rem;
+  }
+
+  .user__container {
+    flex-direction: column;
+  }
+
+  .video__title {
+    color: #141414;
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 2.3375rem */
+    letter-spacing: -0.05rem;
+    margin-bottom: 2rem;
+    margin: 0 16px;
+  }
+
+  .video__container{
+    margin: 0 16px;
+  }
+
+  .video{
+    width: 100%;
+  }
 }
