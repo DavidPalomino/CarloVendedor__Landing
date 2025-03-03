@@ -9,14 +9,23 @@
 }
 
 .heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
   max-width: 1232px;
   width: 100%;
 }
 
+.text__container {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .text {
-  width: 62%;
-  padding-top: 9.1rem;
+  position: relative;
   font-family: Inter;
   font-size: 3.75rem;
   line-height: 4.5rem;
@@ -29,8 +38,7 @@
 
 .beDealerButton {
   background-color: #d3ff3c;
-  margin-top: 1.9rem;
-  padding: 18px 34px;
+  padding: 1.125rem 1.5rem;
   border-radius: 20px;
   border: none;
   font-family: Poppins;
@@ -38,10 +46,9 @@
   font-size: 1.25rem;
   line-height: 140%;
   font-style: normal;
-
 }
 
-.backLetters{
+.backLetters {
   background-color: rgba(72, 66, 251, 1);
   height: 4.625rem;
   left: -0.9rem;
@@ -49,14 +56,57 @@
   z-index: -1;
 }
 
-.backTop{
+.backTop {
+  width: 107%;
   margin-top: 0.3rem;
-  width: 46.0625rem;
   transform: rotate(0.714deg);
 }
 
-.backBottom{
+.backBottom {
+  width: 105%;
   margin-top: 0.2rem;
-  width: 26.61rem;
   transform: rotate(-1.446deg);
+}
+
+@media (max-width: 393px) {
+  .heroImg {
+    background-image: url("/src/assets/images/HeroMobileBackground.svg");
+  }
+
+  .heroContent {
+    margin-left: 16px;
+    margin-right: 16px;
+    justify-content: center;
+    gap: 2.25rem;
+  }
+  .text {
+    font-size: 2.375rem;
+    line-height: 2.85rem;
+    letter-spacing: -0.05656rem;
+  }
+
+  .backLetters {
+    height: 2.75rem;
+    left: -0.5rem;
+  }
+
+  .backTop {
+    width: 107%;
+    transform: rotate(1.166deg);
+  }
+  .backMiddle {
+    width: 106%;
+    margin-top: 0.2rem;
+    transform: rotate(-1.521deg);
+  }
+  .backBottom {
+    margin-top: 0.25rem;
+    width: 115%;
+    transform: rotate(1.166deg);
+  }
+
+  .beDealerButton{
+    font-size: 0.9375rem;
+  }
+
 }

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import './assets/styles/App.css'
 
 import { Footer } from './components/common/Footer/Footer'
@@ -8,16 +9,34 @@ import { HowItWorks } from './components/sections/HowItWorks/HowItWorks'
 import { SocialPS } from './components/sections/SocialPS/SocialPS'
 
 function App() {
+
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <>
-    <Header/>
-    <HeroSection/>
-    <main className="container">
+    <Header  windowSize={windowSize}/>
+    <HeroSection windowSize={windowSize}/>
+    {/* <main className="container">
     <SocialPS/>
     <HowItWorks/>
     </main>
     <CTA/>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }

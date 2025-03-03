@@ -10,7 +10,7 @@ import fbIcon from "../../../assets/images/icons/FbGrayIcon.svg";
 import igIcon from "../../../assets/images/icons/IgGrayIcon.svg";
 import tiktokIcon from "../../../assets/images/icons/TikTokGrayIcon.svg";
 
-export const Header = () => {
+export const Header = ({windowSize}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTransparent, setIsTransparent] = useState(true);
   const [aux, setAux] = useState(true)
