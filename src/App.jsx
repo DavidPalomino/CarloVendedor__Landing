@@ -31,10 +31,10 @@ function App() {
     <>
     <Header  windowSize={windowSize}/>
     <HeroSection windowSize={windowSize}/>
-    {/* <main className="container">
-    <SocialPS/>
-    <HowItWorks/>
+    <main className="container">
+    <SocialPS windowSize={windowSize}/>
     </main>
+    {/* <HowItWorks/>
     <CTA/>
     <Footer/> */}
     </>

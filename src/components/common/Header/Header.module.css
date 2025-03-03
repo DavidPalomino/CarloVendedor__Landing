@@ -15,6 +15,7 @@
   align-items: center;
   max-width: 1232px;
   width: 100%;
+  margin: 0 16px;
 }
 
 .invertLogoColor {
@@ -216,5 +217,9 @@
 
   .visibleImg{
     padding: 0.18 0.11rem;
+  }
+
+  .carrusel{
+    margin: 0 16;
   }
 }

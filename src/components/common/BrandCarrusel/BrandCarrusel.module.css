@@ -3,8 +3,10 @@
   overflow: hidden;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  width: 100%;
-  height: 10.25rem;
+  width: calc(100% - 32px);
+  max-width: 100%;
+  margin: 0 16px;
+  padding: 2rem 2.75rem;
   border-radius: 2rem;
   white-space: nowrap;
 }
@@ -47,3 +49,10 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 393px) {
+  .track img{
+    width: 5.375rem;
+  }
+}
+

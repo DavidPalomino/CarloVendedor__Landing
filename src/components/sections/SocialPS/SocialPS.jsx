@@ -2,8 +2,9 @@ import styles from "./SocialPS.module.css";
 import { BrandCarrusel } from "../../common/BrandCarrusel/BrandCarrusel";
 import socialImg from "../../../assets/images/SocialImg.svg";
 import purpleThing from "../../../assets/images/purpleThing.svg";
+import prupleImgMobile from "../../../assets/images/prupleImgMobile.svg";
 
-export const SocialPS = () => {
+export const SocialPS = ({windowSize}) => {
   return (
     <div className={styles.rectangle}>
       <div className={styles.header}>
@@ -15,7 +16,7 @@ export const SocialPS = () => {
           <img src={socialImg} />
         </div>
         <div className={styles.content_text}>
-          <img src={purpleThing} className={styles.prupleImg} />
+          <img src={windowSize > 393 ? purpleThing : prupleImgMobile} className={styles.prupleImg} />
           <div className={styles.container}>
             <div className={styles.text__container}>
               <h1 className={styles.text__container_title}>
@@ -35,7 +36,9 @@ export const SocialPS = () => {
           </div>
         </div>
       </div>
+      <div className={styles.carrusel}>
       <BrandCarrusel/>
+      </div>
     </div>
   );
 };
