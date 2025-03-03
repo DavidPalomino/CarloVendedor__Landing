@@ -13,3 +13,11 @@ body {
 button{
   cursor: pointer;
 }
+
+@media (max-width: 430px) {
+  .container {
+    max-width: auto;
+    margin: 0;
+}
+}
+

@@ -153,7 +153,7 @@ export const HowItWorks = ({windowSize}) => {
       </div>
       <div className={styles.user}>
         <div className={styles.user__container}>
-          {windowSize.width > 430 ?
+          {windowSize.width >= 430 ?
           <div className={styles.user__content}>
             <img src={checkIcon} className={styles.user__content__icon}/>
             <div className={styles.user__content__text}>
