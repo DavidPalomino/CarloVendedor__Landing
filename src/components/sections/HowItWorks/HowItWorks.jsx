@@ -48,7 +48,7 @@ export const HowItWorks = ({windowSize}) => {
               <h1 className={styles.content__number}>1</h1>
               <div className={styles.container__text}>
                 <h1 className={styles.container__text__title}>
-                  Regístrate y verifica {windowSize.width <= 430 ? <br/>:""}tu cuenta
+                  Regístrate y verifica {windowSize.width <= 768 ? <br/>:""}tu cuenta
                 </h1>
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos
@@ -78,7 +78,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1
                   className={`${styles.container__text__title} ${styles.stepTwo__title__color}`}
                 >
-                  Explora nuestro{windowSize.width <= 430 ? <br/>:""} stock de vehículos
+                  Explora nuestro{windowSize.width <= 768 ? <br/>:""} stock de vehículos
                 </h1>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
@@ -153,7 +153,7 @@ export const HowItWorks = ({windowSize}) => {
       </div>
       <div className={styles.user}>
         <div className={styles.user__container}>
-          {windowSize.width >= 430 ?
+          {windowSize.width >= 768 ?
           <div className={styles.user__content}>
             <img src={checkIcon} className={styles.user__content__icon}/>
             <div className={styles.user__content__text}>
@@ -164,7 +164,7 @@ export const HowItWorks = ({windowSize}) => {
             <button className={styles.beDealer}>Quiero ser dealer</button>
           </div>
            : ""}
-           {windowSize.width <= 430 ? 
+           {windowSize.width <= 768 ? 
            <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
             : ""}
           <section className={styles.video__container}>

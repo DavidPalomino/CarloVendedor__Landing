@@ -3,7 +3,7 @@ export const HeroSection = ({windowSize}) => {
 
   return (
     <div className={styles.heroImg}>
-      {windowSize.width > 430 ? (
+      {windowSize.width > 768 ? (
       <div className={styles.heroContent}>
         <div className={styles.text__container}>
         <h1 className={styles.text}>
