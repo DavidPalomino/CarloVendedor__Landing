@@ -261,13 +261,19 @@
     display: none;
   }
 
+  .content__text {
+    padding: 2rem;
+  }
+
   .content__number {
     font-size: 4rem;
   }
 
   .text__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
-    padding: 2rem;
     gap: 1.25rem;
   }
 
@@ -307,11 +313,11 @@
     margin: 0 16px;
   }
 
-  .video__container{
+  .video__container {
     margin: 0 16px;
   }
 
-  .video{
+  .video {
     width: 100%;
   }
 }
