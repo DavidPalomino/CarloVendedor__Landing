@@ -81,7 +81,6 @@
   font-size: 8rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 100%;
 }
 
 .container__text {
@@ -274,8 +273,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 1.25rem;
-  height: auto;
-  padding: 2rem;
+    height: auto;
   }
 
   .container__text {
