@@ -87,7 +87,7 @@ export const Footer = ({windowSize}) => {
       </div>
       <img src={GoogleIcon} className={styles.googleIcon}/>
       </section>
-      <section className={styles.footer__section__three}>
+      {/* <section className={styles.footer__section__three}>
       <div className={styles.information}>
         <img src={CopyRightIcon}/>
         <p className={styles.copyright__text}>MOVE TECHNOLOGIES S.A.C. 20603667451</p>
@@ -97,7 +97,7 @@ export const Footer = ({windowSize}) => {
         <p>Políticas de privacidad</p>
         <p>Términos y condiciones</p>
       </div>
-      </section>
+      </section> */}
       </div>
     </footer>
   );
