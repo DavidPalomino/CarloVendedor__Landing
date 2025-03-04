@@ -65,7 +65,7 @@ export const Footer = ({windowSize}) => {
          </div>
       </section>
     )}
-      <section className={styles.footer__section__second}>
+      {/* <section className={styles.footer__section__second}>
       <button className={styles.web__button}>Visita nuestra web</button>
       <div className={styles.information__container}>
         <div className={styles.information}>
@@ -86,8 +86,8 @@ export const Footer = ({windowSize}) => {
         </div>
       </div>
       <img src={GoogleIcon} className={styles.googleIcon}/>
-      </section>
-      <section className={styles.footer__section__three}>
+      </section> */}
+      {/* <section className={styles.footer__section__three}>
       <div className={styles.information}>
         <img src={CopyRightIcon}/>
         <p className={styles.copyright__text}>MOVE TECHNOLOGIES S.A.C. 20603667451</p>
@@ -97,7 +97,7 @@ export const Footer = ({windowSize}) => {
         <p>Políticas de privacidad</p>
         <p>Términos y condiciones</p>
       </div>
-      </section>
+      </section> */}
       </div>
     </footer>
   );
