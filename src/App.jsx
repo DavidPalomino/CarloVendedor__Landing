@@ -45,7 +45,7 @@ function App() {
       <HowItWorks windowSize={windowSize}/>
       <CTA windowSize={windowSize}/>
       </div>)}
-    {/* <Footer/> */}
+    <Footer windowSize={windowSize}/>
     </>
   )
 }

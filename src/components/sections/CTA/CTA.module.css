@@ -1,7 +1,7 @@
 .CTAimg {
     background-image: url("/src/assets/images/CTAImage.svg");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,7 @@
 .heroImg {
   background-image: url("/src/assets/images/HeroImg.svg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   display: flex;
   justify-content: center;
   height: 750px;

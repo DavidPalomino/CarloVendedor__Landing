@@ -10,70 +10,94 @@ import PhoneIcon from "../../../assets/images/icons/PhoneIcon.svg";
 import GoogleIcon from "../../../assets/images/icons/GoogleIcon.svg";
 import CopyRightIcon from "../../../assets/images/icons/CopyRightIcon.svg";
 
-export const Footer = () => {
+export const Footer = ({windowSize}) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-        <div className={styles.first__content}>
-        <section className={styles.icons__section}>
-          <img src={logo} className={styles.logo}/>
-          <button className={styles.beDealerButton}>Quiero ser dealer</button>
-          <div className={styles.icons}>
-            <a href="#" className={styles.icon}> <img src={fbIcon} /> </a>
-            <a href="#" className={styles.icon}> <img src={igIcon} /> </a>
-            <a href="#" className={styles.icon}> <img src={tiktokIcon} /> </a>
-          </div>
-        </section>
-        <section className={styles.actions}> 
-          <p className={styles.footer__paragraphs}>Comprar un auto</p>
-          <p className={styles.footer__paragraphs}>Vender mi auto</p>
-          <p className={styles.footer__paragraphs}>Servicios</p>
-          <p className={styles.footer__paragraphs}>Subastas</p>
-        </section>
-        <section className={styles.actions}>
-        <p className={styles.footer__paragraphs}>¿Cómo vender mi auto?</p>
-          <p className={styles.footer__paragraphs}>¿Cómo ser Dealer?</p>
-          <p className={styles.footer__paragraphs}>Premios y certificados</p>
-          <p className={styles.footer__paragraphs}>Preguntas frecuentes</p>
-        </section>
+    {windowSize.width > 768 ? (
+      <section className={styles.footer__section__first}>
+         <div className={styles.a}>
+            <img src={logo} className={styles.logo}/>
+            <button className={styles.beDealer}>Quiero ser dealer</button>
+            <div className={styles.icons__social}>
+            <img src={fbIcon}/>
+            <img src={igIcon}/>
+            <img src={tiktokIcon}/>
+            </div>
+         </div>
+         <div className={styles.b}>
+          <p>Comprar un auto</p>
+          <p>Vender auto</p>
+          <p>Servicios</p>
+          <p>Subastas</p>
+         </div>
+         <div className={styles.b}>
+          <p>¿Cómo vender mi auto?</p>
+          <p>¿Cómo ser Dealer?</p>
+          <p>Premios y certificados</p>
+          <p>Preguntas frecuentes</p>
+         </div>
+      </section>
+    ):(
+      <section className={styles.footer__section__first}>
+         <div className={styles.a}>
+            <img src={logo} className={styles.logo}/>
+            <button className={styles.beDealer}>Quiero ser dealer</button>
+            <div className={styles.icons__social}>
+            <img src={fbIcon}/>
+            <img src={igIcon}/>
+            <img src={tiktokIcon}/>
+            </div>
+         </div>
+         <div className={styles.first__section__container}>
+         <div className={styles.b}>
+          <p>Comprar un auto</p>
+          <p>Vender auto</p>
+          <p>Servicios</p>
+          <p>Subastas</p>
+         </div>
+         <div className={styles.b}>
+          <p>¿Cómo vender mi auto?</p>
+          <p>¿Cómo ser Dealer?</p>
+          <p>Premios y certificados</p>
+          <p>Preguntas frecuentes</p>
+         </div>
+         </div>
+      </section>
+    )}
+      <section className={styles.footer__section__second}>
+      <button className={styles.web__button}>Visita nuestra web</button>
+      <div className={styles.information__container}>
+        <div className={styles.information}>
+          <img src={locationIcon}/>
+          <p>Cerro Azul 421, Santiago de Surco, Lima</p>
         </div>
-        <div className={styles.second__content}>
-            <button className={styles.main__page__button}>
-              Visita nuestra web
-            </button>
-            <section className={styles.information}>
-              <div className={styles.information__container}>
-                <img src={locationIcon}/>
-                <p className={styles.information__text}>Cerro Azul 421, Santiago de Surco, Lima</p>
-              </div>
-              <div className={styles.information__container}>
-                <img src={ClockIcon}/>
-                <p className={styles.information__text}>Atencion de 9:00am a 6:00pm</p>
-              </div>
-              <div className={styles.information__container}>
-                <img src={MailIcon}/>
-                <p className={styles.information__text}>contacto@carlo.pe</p>
-              </div>
-              <div className={styles.information__container}>
-                <img src={PhoneIcon}/>
-                <p className={styles.information__text}>+51 934 140 010</p>
-              </div>
-            </section>
-            <img src={GoogleIcon}/>
+        <div className={styles.information}>
+          <img src={ClockIcon}/>
+          <p>Atencion de 9:00am a 6:00pm</p>
         </div>
-        <div className={styles.third__content}>
-        <section className={styles.company__info}>
-          <div className={styles.company__info__text}>
-            <img src={CopyRightIcon}/>
-            <p className={styles.copyright__text}>MOVE TECHNOLOGIES S.A.C. 20603667451</p>
-          </div>
-          <div className={styles.legal__link__text}>
-            <p className={styles.link__text}>Avisos legales</p>
-            <p className={styles.link__text}>Políticas de privacidad</p>
-            <p className={styles.link__text}>Términos y condiciones</p>
-          </div>
-        </section>
+        <div className={styles.information}>
+          <img src={MailIcon}/>
+          <p>contacto@carlo.pe</p>
         </div>
+        <div className={styles.information}>
+          <img src={PhoneIcon}/>
+          <p>+51 934 140 010</p>
+        </div>
+      </div>
+      <img src={GoogleIcon} className={styles.googleIcon}/>
+      </section>
+      <section className={styles.footer__section__three}>
+      <div className={styles.information}>
+        <img src={CopyRightIcon}/>
+        <p className={styles.copyright__text}>MOVE TECHNOLOGIES S.A.C. 20603667451</p>
+      </div>
+      <div className={styles.legal__links}>
+        <p>Avisos legales</p>
+        <p>Políticas de privacidad</p>
+        <p>Términos y condiciones</p>
+      </div>
+      </section>
       </div>
     </footer>
   );
