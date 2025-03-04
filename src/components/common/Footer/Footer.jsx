@@ -65,7 +65,7 @@ export const Footer = ({windowSize}) => {
          </div>
       </section>
     )}
-      <section className={styles.footer__section__second}>
+      {/* <section className={styles.footer__section__second}>
       <button className={styles.web__button}>Visita nuestra web</button>
       <div className={styles.information__container}>
         <div className={styles.information}>
@@ -86,7 +86,7 @@ export const Footer = ({windowSize}) => {
         </div>
       </div>
       <img src={GoogleIcon} className={styles.googleIcon}/>
-      </section>
+      </section> */}
       {/* <section className={styles.footer__section__three}>
       <div className={styles.information}>
         <img src={CopyRightIcon}/>
