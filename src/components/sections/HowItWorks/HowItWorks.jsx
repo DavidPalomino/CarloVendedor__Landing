@@ -184,6 +184,9 @@ export const HowItWorks = ({windowSize}) => {
                 <source src={socialVideo} type="video/mp4" />
               </video>
           </section>
+          {windowSize.width <= 768 ? 
+           <button className={styles.beDealer}>Quiero ser dealer</button>
+            : ""}
         </div>
       </div>
     </section>

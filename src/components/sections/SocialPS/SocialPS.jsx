@@ -20,7 +20,7 @@ export const SocialPS = ({windowSize}) => {
           <div className={styles.container}>
             <div className={styles.text__container}>
               <h1 className={styles.text__container_title}>
-                Que tu negocio no pare: compra autos verificados
+                Que tu negocio no {windowSize.width <= 768 ? <br/>:""}pare: compra autos {windowSize.width <= 768 ? <br/>:""} verificados
               </h1>
               <p className={styles.text__container_paragraph}>
                 En CARLO, subastamos vehículos inspeccionados directamente de

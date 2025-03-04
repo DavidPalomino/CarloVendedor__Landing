@@ -218,8 +218,10 @@
   .visibleImg{
     padding: 0.18 0.11rem;
   }
-
-  .carrusel{
-    margin: 0 16;
+  .items__section{
+    display: none;
   }
+/* 
+  .links__content{
+  } */
 }
