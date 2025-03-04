@@ -75,17 +75,17 @@
 
 @media (max-width: 768px) {
   .heroImg {
-    background-image: url('../../../assets/images/HeroMobileBackground.svg');
+    background-image: url('../../../assets/images/HeroMobileBackground.jpg');
     }
 
   .heroContent {
     margin-left: 16px;
     margin-right: 16px;
     justify-content: center;
-    gap: 2.25rem;
+    gap: 2.5rem;
   }
   .text {
-    font-size: 2.375rem;
+    font-size: 2.7rem;
     line-height: 2.85rem;
     letter-spacing: -0.05656rem;
   }
@@ -111,6 +111,8 @@
   }
 
   .beDealerButton{
+    margin-bottom: 14px;
+    padding: 18px 24px;
     font-size: 0.9375rem;
   }
 
