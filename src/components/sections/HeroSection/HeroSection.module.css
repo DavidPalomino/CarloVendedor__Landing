@@ -1,5 +1,5 @@
 .heroImg {
-  background-image: url("/src/assets/images/HeroImg.svg");
+  background-image: url("/src/assets/images/HeroImg.jpg");
   background-size: cover;
   background-position: right;
   display: flex;

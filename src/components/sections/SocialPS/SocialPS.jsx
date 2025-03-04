@@ -1,6 +1,6 @@
 import styles from "./SocialPS.module.css";
 import { BrandCarrusel } from "../../common/BrandCarrusel/BrandCarrusel";
-import socialImg from "../../../assets/images/SocialImg.svg";
+import socialImg from "../../../assets/images/SocialImg.jpg";
 import purpleThing from "../../../assets/images/purpleThing.svg";
 import prupleImgMobile from "../../../assets/images/prupleImgMobile.svg";
 

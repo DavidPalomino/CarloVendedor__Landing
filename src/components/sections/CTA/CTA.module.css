@@ -1,5 +1,5 @@
 .CTAimg {
-    background-image: url("/src/assets/images/CTAImage.svg");
+    background-image: url("/src/assets/images/CTAImage.jpg");
     background-size: cover;
     background-position: right;
     display: flex;
@@ -74,7 +74,7 @@
 
 @media (max-width: 768px) {
   .CTAimg{
-    background-image: url("/src/assets/images/CTAImageMobile.svg");
+    background-image: url("/src/assets/images/CTAImageMobile.jpg");
     background-size: cover;
     height: 485px;
   }
