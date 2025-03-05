@@ -29,7 +29,7 @@ export const SocialPS = ({windowSize}) => {
                 financieras, solo vehículos verificados.
               </p>
               <p className={styles.text__container_paragraph}>
-                Tu próxima oportunidad está a un clic de{windowSize.width <= 768 ? <br/>:""} distancia.
+                Tu próxima oportunidad está a un clic de distancia.
               </p>
             </div>
             <button className={styles.beDealer}>Quiero ser dealer</button>

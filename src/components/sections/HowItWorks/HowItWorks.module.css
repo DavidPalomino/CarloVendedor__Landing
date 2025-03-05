@@ -260,8 +260,7 @@
   }
 
   .steps {
-    gap: 3.12rem;
-
+    gap: 50px;
     padding: 0px;
   }
   .steps__one,
@@ -277,7 +276,7 @@
     display: none;
   }
   .content__text {
-    padding:  32px 32px 3px 32px;;
+    padding:11px 32px 11px 32px;
     }
 
   .content__number {
@@ -319,6 +318,8 @@
 
   .user__container {
     flex-direction: column;
+    margin-top: 83px;
+    gap: 32px;
   }
 
   .video__title {
@@ -328,7 +329,7 @@
     font-size: 2.125rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 2.3375rem */
+    line-height: 2.3375rem;
     letter-spacing: -0.05rem;
     margin-bottom: 2rem;
     margin: 0 16px;
@@ -343,6 +344,6 @@
   }
   .beDealer {
   max-width: 12.75rem;
-  margin: 2rem auto;
+  margin: 0 auto;
   }
 }

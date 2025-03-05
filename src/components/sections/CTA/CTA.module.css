@@ -77,6 +77,7 @@
     background-image: url("/src/assets/images/CTAImageMobile.jpg");
     background-size: cover;
     height: 485px;
+    margin-top: 80px;
   }
 
   .text ,.text__jump {
