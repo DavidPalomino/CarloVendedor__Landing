@@ -1,20 +1,21 @@
 .heroImg {
-  background-image: url("/src/assets/images/HeroImg.jpg");
+  background-image: url("/src/assets/images/HeroBackground.jpg");
   background-size: cover;
-  background-position: right;
+  background-position: 50%;;
   display: flex;
   justify-content: center;
   height: 750px;
-  width: 100%;
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
+  gap: 55px;
   max-width: 1232px;
   width: 100%;
+  padding-left: 20px;
 }
 
 .text__container {
@@ -22,14 +23,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 41px;
 }
 
 .text {
   position: relative;
   font-family: Inter;
-  font-size: 3.75rem;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
+  letter-spacing: -1.28px;;
   position: relative;
   color: white;
   z-index: 0;
@@ -48,6 +51,7 @@
   line-height: 140%;
   font-style: normal;
   color: black;
+  margin: 10px;
 }
 
 .backLetters {
@@ -59,7 +63,7 @@
 }
 
 .backTop {
-  width: 107%;
+  width: 104%;
   margin-top: 0.3rem;
   transform: rotate(0.714deg);
 }

@@ -103,7 +103,7 @@ export const HowItWorks = ({windowSize}) => {
             <img src={stepTwoImg} className={styles.macImg} />
           </div>
         </div>
-        <div className={styles.steps__one}>
+        {/* <div className={styles.steps__one}>
           <div className={styles.content__text}>
             <div className={styles.text__container}>
               <h1 className={styles.content__number}>3</h1>
@@ -122,7 +122,7 @@ export const HowItWorks = ({windowSize}) => {
           <div>
             <img src={stepThreeImg} />
           </div>
-        </div>
+        </div> */}
         <div className={styles.steps__two}>
           <div
             className={`${styles.content__text} $ ${styles.stepTwo__container__color}`}
