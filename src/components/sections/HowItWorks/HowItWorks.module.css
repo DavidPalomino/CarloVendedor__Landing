@@ -44,6 +44,7 @@
 .steps {
   display: flex;
   flex-direction: column;
+  padding: 20px;
   gap: 12.12rem;
 }
 
@@ -65,7 +66,6 @@
   max-width: 658px;
   min-height: 368px;
   height: auto;
-  padding: 4.38rem 2rem;
   border-radius: 2rem;
   box-shadow: 0px 40px 40px 0px rgba(20, 20, 20, 0.04);
 }
@@ -76,6 +76,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 2.5rem;
+  padding: 70px 70px 70px 50px;
 }
 
 .content__number {
@@ -88,7 +89,10 @@
 }
 
 .container__text {
-  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .container__text__title {
@@ -100,7 +104,6 @@
   line-height: 110%; /* 2.75rem */
   letter-spacing: -0.05rem;
   text-align: start;
-  margin-bottom: 1.25rem;
 }
 
 .container__text__paragraph {
@@ -112,7 +115,6 @@
   line-height: 150%;
   margin-top: 0;
   text-align: start;
-  margin-bottom: 0.75rem;
 }
 
 .container__text__anchor {
@@ -122,13 +124,19 @@
   font-style: normal;
   font-weight: 500;
   text-align: start;
-  line-height: 150%;
+  line-height: 10px;
   text-decoration-line: underline;
 }
 
-.macImg {
+.step__img__container__two{
   position: relative;
-  right: 1rem;
+  width: 500px;
+  height: 440px;
+}
+
+.macImg {
+  position: absolute;
+  left: -113px;
 }
 
 .steps__two {
@@ -253,6 +261,8 @@
 
   .steps {
     gap: 3.12rem;
+
+    padding: 0px;
   }
   .steps__one,
   .steps__two {
@@ -263,14 +273,16 @@
   .steps__two img {
     display: none;
   }
-
-  .content__text {
-    padding: 2rem 2.5rem;
+  .step__img__container__two{
+    display: none;
   }
+  .content__text {
+    padding:  32px 32px 3px 32px;;
+    }
 
   .content__number {
     font-size: 4rem;
-    line-height: 4rem;
+    line-height: 3rem;
     margin: 0;
     padding: 0;
   }
@@ -281,7 +293,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 1.25rem;
-    height: auto;
+    padding: 0;
+
   }
 
   .container__text {
@@ -291,6 +304,7 @@
   .container__text__title {
     font-size: 1.875rem;
     margin-top: 0;
+    margin-bottom: 0;
     letter-spacing: -0.05rem;
   }
   .step__three__mobile__title {
@@ -300,6 +314,7 @@
   .container__text__paragraph {
     font-size: 1rem;
     line-height: 1.40625rem;
+    margin: 0;
   }
 
   .user__container {
