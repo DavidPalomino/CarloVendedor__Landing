@@ -162,6 +162,8 @@ text-align: left;
 @media (max-width: 768px) {
   .footer__content{
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .footer__section__first{
     flex-direction: column;
