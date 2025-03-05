@@ -58,6 +58,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1 className={styles.container__text__title}>
                   Regístrate y verifica tu cuenta
                 </h1>
+                <div className={styles.subcontainer__text}>
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos
                   verificados. Completa tu registro y verifica tu cuenta para
@@ -66,6 +67,7 @@ export const HowItWorks = ({windowSize}) => {
                 <a className={styles.container__text__anchor}>
                   Regístrate ahora
                 </a>
+                </div>
               </div>
             </div>
           </div>
@@ -139,6 +141,7 @@ export const HowItWorks = ({windowSize}) => {
                 >
                   Completa la compra y recoge tu auto
                 </h1>
+                <div className={styles.subcontainer__text}>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
                 >
@@ -151,6 +154,7 @@ export const HowItWorks = ({windowSize}) => {
                 >
                   Quiero ser dealer
                 </a>
+              </div>
               </div>
             </div>
           </div>
