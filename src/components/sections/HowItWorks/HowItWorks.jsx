@@ -88,7 +88,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1
                   className={`${styles.container__text__title} ${styles.stepTwo__title__color}`}
                 >
-                  Explora nuestro{windowSize.width <= 768 ? <br/>:""} stock de vehículos
+                  Explora nuestro{windowSize.width <= 500 ? <br/>:""} stock de vehículos
                 </h1>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
@@ -165,7 +165,7 @@ export const HowItWorks = ({windowSize}) => {
       </div>
       <div className={styles.user}>
         <div className={styles.user__container}>
-          {windowSize.width >= 768 ?
+          {windowSize.width >= 500 ?
           <section className={styles.text__section}>
             <div className={styles.text__content}>
               <img src={checkIcon}/>
@@ -178,7 +178,7 @@ export const HowItWorks = ({windowSize}) => {
             <button className={styles.beDealer}>Quiero ser dealer</button>
           </section>
            : ""}
-           {windowSize.width <= 768 ? 
+           {windowSize.width <= 500 ? 
            <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
             : ""}
           <section className={styles.video__container} onClick={handleToggleSound}>
@@ -190,7 +190,7 @@ export const HowItWorks = ({windowSize}) => {
                 <source src={socialVideo} type="video/mp4" />
               </video>
           </section>
-          {windowSize.width <= 768 ? 
+          {windowSize.width <= 500 ? 
            <button className={styles.beDealer}>Quiero ser dealer</button>
             : ""}
         </div>

@@ -14,7 +14,7 @@ export const Footer = ({windowSize}) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-    {windowSize.width > 768 ? (
+    {windowSize.width > 500 ? (
       <section className={styles.footer__section__first}>
          <div className={styles.a}>
             <img src={logo} className={styles.logo}/>

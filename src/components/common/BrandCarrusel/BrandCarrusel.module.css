@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .track img{
     width: 5.375rem;
   }

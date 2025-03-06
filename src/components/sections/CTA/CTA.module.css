@@ -72,7 +72,7 @@
     transform: rotate(0.447deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .CTAimg{
     background-image: url("/src/assets/images/CTAImageMobile.jpg");
     background-size: cover;

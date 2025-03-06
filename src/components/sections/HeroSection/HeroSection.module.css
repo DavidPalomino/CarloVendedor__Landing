@@ -74,7 +74,7 @@
   transform: rotate(-1.446deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .heroImg {
     background-image: url('../../../assets/images/HeroMobileBackground.jpg');
   justify-content: flex-start;

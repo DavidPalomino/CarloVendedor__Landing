@@ -3,7 +3,7 @@ import styles from "./CTA.module.css";
 export const CTA = ({windowSize}) => {
   return (
     <div className={styles.CTAimg}>
-      {windowSize.width >= 768 ? (
+      {windowSize.width >= 500 ? (
       <div className={styles.CTA__content}>
         <h1 className={styles.text}>Empieza hoy y accede a los</h1>
         <h1 className={styles.text__jump}>
@@ -18,7 +18,7 @@ export const CTA = ({windowSize}) => {
       </div>
       ): (
         <div className={styles.CTA__content}>
-        <h1 className={styles.text}>Empieza hoy y {windowSize.width <= 768 ? <br/>:""}accede a los</h1>
+        <h1 className={styles.text}>Empieza hoy y {windowSize.width <= 500 ? <br/>:""}accede a los</h1>
         <h1 className={styles.text__jump}>
           <div className={`${styles.backLetters} ${styles.backTop}`} />
           mejores autos
