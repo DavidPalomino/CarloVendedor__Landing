@@ -90,10 +90,10 @@
 
   .text__paragraph{
     align-self: stretch;
-    font-size: 0.95rem;
-    line-height: 1.225rem;
+    font-size: 15px;
+    line-height: 150%;
     width: 100%;
-    margin: 1.56rem 0 0 0;
+    margin: 1.56rem 0 0;
     padding: 0;
   }
 
