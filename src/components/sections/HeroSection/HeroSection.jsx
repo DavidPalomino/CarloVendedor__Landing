@@ -8,38 +8,38 @@ export const HeroSection = ({windowSize}) => {
         <div className={styles.text__container}>
         <h1 className={styles.text}>
           <div className={`${styles.backLetters} ${styles.backTop}`}/>
-          ¿Te dedicas a comprar y
+          ¡Más ofertas, mejor precio!
           </h1>
         <h1 className={styles.text}> 
           <div className={`${styles.backLetters} ${styles.backBottom}`}/>
-          vender autos? 
+          Subasta tu auto en CARLO.
         </h1>
           <h1 className={styles.text}>
-            Únete a CARLO y consigue <br/>lo mejor del mercado.
+          ¡Y no!, no es rematarlo, es <br/>venderlo mejor 😎
         </h1>
         </div>
-        <button className={styles.beDealerButton}>Quiero ser dealer</button>
+        <button className={styles.beDealerButton}>Quiero cotizar</button>
         </div>
       ) : (
       <div className={styles.heroContent}>
         <div className={styles.text__container}>
             <h1 className={styles.text}>
               <div className={`${styles.backLetters} ${styles.backTop}`}/>
-              ¿Te dedicas a
+              ¡Más ofertas, mejor
             </h1>
             <h1 className={styles.text}> 
               <div className={`${styles.backLetters} ${styles.backMiddle}`}/>
-              comprar y vender 
+              precio! Subasta tu
             </h1>
             <h1 className={styles.text}>
             <div className={`${styles.backLetters} ${styles.backBottom}`}/>
-            autos? 
+            auto en CARLO. 
             </h1>
               <h1 className={styles.text}>
-                Únete a CARLO y <br/>consigue lo mejor<br/> del mercado.
+              ¡Y no!, no es rematarlo, es venderlo mejor 😎
             </h1>
           </div>
-            <button className={styles.beDealerButton}>Quiero ser dealer</button>
+            <button className={styles.beDealerButton}>Quiero cotizar</button>
           </div>
       )}
       </div>

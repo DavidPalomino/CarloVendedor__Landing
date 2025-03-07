@@ -32,6 +32,7 @@
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
+  line-height: 72px;
   letter-spacing: -1.28px;;
   position: relative;
   color: white;
@@ -56,29 +57,29 @@
 
 .backLetters {
   background-color: rgba(72, 66, 251, 1);
-  height: 4.625rem;
   left: -0.9rem;
   position: absolute;
   z-index: -1;
 }
 
 .backTop {
-  width: 104%;
-  margin-top: 0.3rem;
-  transform: rotate(0.714deg);
+  height: 74px;
+  margin-top: 0.1rem;
+  width: 106.2%;
+  transform: rotate(0.097deg);
 }
 
 .backBottom {
-  width: 105%;
+  height: 70px;
+  width: 104%;
   margin-top: 0.2rem;
-  transform: rotate(-1.446deg);
+  transform: rotate(-1.003deg);
 }
 
 @media (max-width: 900px) {
   .heroImg {
-    background-image: url('../../../assets/images/HeroBackgroundTable.jpg');
-    background-position: 50% 100%;
-  }
+    background-position: 57% 100%;
+    }
   .heroContent {
     gap: 118px;
   }
@@ -97,15 +98,13 @@
   }
 
   .backTop {
-    width: 104%;
-    height: 65.501px;
-    margin-top: 0;
+    height: 59.501px;    
+    width: 106.4%;
+    margin-top: 0.1rem;
     transform: rotate(0.714deg);
   }
   
   .backBottom {
-    width: 105%;
-    margin-top: 0.4rem;
     height: 53.647px;
     transform: rotate(-0.727deg);
   }
@@ -131,9 +130,9 @@
     margin-top: 105px;
   }
   .text {
-    font-size: 2.6rem;
-    line-height: 2.85rem;
-    letter-spacing: -0.05656rem;
+    font-size: 37px;
+    line-height: 45.6px;
+    letter-spacing: -0.905px;
   }
 
   .backLetters {
@@ -143,18 +142,22 @@
   }
 
   .backTop {
-    width: 107%;
-    transform: rotate(1.166deg);
+    width: 104%;
+    margin-top: 0.2rem;
+    height: 45.32px;
+    transform: rotate(0.759deg);
   }
   .backMiddle {
-    width: 106%;
+    width: 109.6%;
+    height: 45.32px;
     margin-top: 0.2rem;
-    transform: rotate(-1.521deg);
+    transform: rotate(-0.823deg);
   }
   .backBottom {
-    margin-top: 0.25rem;
-    width: 115%;
-    transform: rotate(1.166deg);
+    margin-top: 0.1rem;
+    width: 105%;
+    height: 45.32px;
+    transform: rotate(1.447deg);
   }
 
   .beDealerButton{
