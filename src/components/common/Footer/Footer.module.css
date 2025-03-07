@@ -256,6 +256,10 @@ text-align: left;
     margin: 0;
   }
 
+  .beDealer{
+    border-radius: 14px;
+  }
+
   .footer__section__first{
     flex-direction: column;
     gap: 2.5rem;
