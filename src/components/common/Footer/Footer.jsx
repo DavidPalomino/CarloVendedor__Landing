@@ -18,7 +18,7 @@ export const Footer = ({windowSize}) => {
       <section className={styles.footer__section__first}>
          <div className={styles.a}>
             <img src={logo} className={styles.logo}/>
-            <button className={styles.beDealer}>Quiero ser dealer</button>
+            <button className={styles.beDealer}>Quiero Vender</button>
             <div className={styles.icons__social}>
             <img src={fbIcon}/>
             <img src={igIcon}/>

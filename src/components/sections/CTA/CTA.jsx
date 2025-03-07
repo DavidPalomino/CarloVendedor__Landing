@@ -30,7 +30,7 @@ export const CTA = ({windowSize}) => {
           Nuevo stock cada día para que nunca te falte inventario. Filtra, puja
           y gana las mejores unidades <b>sin intermediarios ni riesgos.</b>
         </p>
-        <button className={styles.beDealerButton}>Quiero ser dealer</button>
+        <button className={styles.beDealerButton}>Quiero Vender</button>
       </div>
       )}
     </div>
