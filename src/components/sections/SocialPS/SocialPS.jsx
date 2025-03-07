@@ -1,7 +1,6 @@
 import styles from "./SocialPS.module.css";
 import { BrandCarrusel } from "../../common/BrandCarrusel/BrandCarrusel";
 import socialImg from "../../../assets/images/SocialImg.jpg";
-import socialImgTablet from "../../../assets/images/SocialImgTable.jpg";
 import purpleThing from "../../../assets/images/purpleThing.svg";
 import prupleImgMobile from "../../../assets/images/prupleImgMobile.svg";
 
@@ -17,6 +16,10 @@ export const SocialPS = ({windowSize}) => {
           <img src={socialImg} />
         </div>
         <section className={styles.content__text}>
+          {windowSize >= 901 ?
+          <img src={purpleThing} className={styles.social__deco}/> :
+          <img src={prupleImgMobile} className={styles.social__deco}/>
+          }
           <div className={styles.text__container}>
             <div className={styles.text__subcontent}>
             <h1 className={styles.text__container__title}>Que tu negocio no <br/>pare: compra autos verificados</h1>

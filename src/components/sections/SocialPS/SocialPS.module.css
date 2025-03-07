@@ -45,10 +45,19 @@
 }
 
 .content__text {
+  position: relative;
   padding: 60px;
   border-radius: 32px;
   background: #fff;
   max-width: 614px;
+  overflow: hidden;
+}
+
+.social__deco{
+  position: absolute;
+  width: 196px;
+  top: 0;
+  right: 0;
 }
 
 .text__subcontent {
@@ -149,6 +158,10 @@
     padding: 32px;
   }
 
+  .social__deco{
+    width: unset;
+  }
+
   .text__subcontent{
     height: 75%;
   }
@@ -204,6 +217,10 @@
     height: unset;
   }
   
+  .social__deco{
+    width: 102px;
+    right: -4px;
+  }
   .content__text {
     max-width: unset;
     max-height: unset;

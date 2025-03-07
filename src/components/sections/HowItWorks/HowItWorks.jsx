@@ -7,6 +7,8 @@ import stepThreeImg from "../../../assets/images/StepThree.svg";
 import stepFourImg from "../../../assets/images/StepFour.svg";
 import checkIcon from "../../../assets/images/CheckIcon.svg";
 import socialVideo from "../../../assets/videos/SocialVideo.mp4";
+import stepFourDecoTop from "../../../assets/images/StepFourDecoTop.svg";
+import stepFourDecoBottom from "../../../assets/images/StepFourDeco.svg";
 export const HowItWorks = ({windowSize}) => {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -71,7 +73,7 @@ export const HowItWorks = ({windowSize}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className={styles.step__img__container}>
             <img src={stepOneImg} />
           </div>
         </div>
@@ -129,6 +131,7 @@ export const HowItWorks = ({windowSize}) => {
           <div
             className={`${styles.content__text} $ ${styles.stepTwo__container__color}`}
           >
+            <img src={stepFourDecoTop} className={styles.stepFourDecoTop}/>
             <div className={styles.text__container}>
               <h1
                 className={`${styles.content__number} ${styles.stepTwo__number__color}`}
@@ -157,6 +160,7 @@ export const HowItWorks = ({windowSize}) => {
               </div>
               </div>
             </div>
+            <img src={stepFourDecoBottom} className={styles.stepFourDecoBottom}/>
           </div>
           <div className={styles.step__img__container}>
             <img src={stepFourImg} />
