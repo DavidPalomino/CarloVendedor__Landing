@@ -170,7 +170,7 @@ export const HowItWorks = ({windowSize}) => {
             <div className={styles.text__content}>
               <img src={checkIcon}/>
               <div className={styles.text__subcontent}>
-              <h1 className={styles.text__title}>Te contamos cómo comprar con total seguridad</h1>
+              <h1 className={styles.text__title}>Te contamos cómo <br/> comprar con total<br/> seguridad</h1>
               <p className={styles.text__paragraph}>Aprende en minutos cómo registrarte, explorar el stock de vehículos y participar en subastas en tiempo real.</p>
               </div>
               <p className={styles.text__paragraph}>Descubre lo fácil y seguro que es comprar autos verificados para tu negocio.</p>

@@ -72,6 +72,32 @@
     transform: rotate(0.447deg);
 }
 
+@media (max-width: 900px) {
+  .CTAimg {
+    background-image: url("/src/assets/images/CTAImageTablet.jpg");
+  }
+  .text, .text__jump{
+    margin: 0;
+  }
+
+  .text, .text__jump{
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -1.28px;
+  }
+
+  .text__paragraph{
+    font-size: 17px;
+    line-height: 27px;
+    width: 71%;
+  }
+  
+  .backLetters{
+    margin-top: 0;
+    width: 104%;
+  }
+}
+
 @media (max-width: 500px) {
   .CTAimg{
     background-image: url("/src/assets/images/CTAImageMobile.jpg");

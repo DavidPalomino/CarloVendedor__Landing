@@ -74,21 +74,21 @@
   transform: rotate(-1.446deg);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
   .heroImg {
     background-image: url('../../../assets/images/HeroBackgroundTable.jpg');
+    background-position: 50% 100%;
   }
   .heroContent {
     gap: 118px;
   }
 
   .text__container{
-    margin-top: 58px;
-
+    margin-top: 44px;
   }
   .text {
     font-size: 48px;
-    line-height: 120%; /* 57.6px */
+    line-height: 57.6px;
     letter-spacing: -1.28px;
   }
 
@@ -161,5 +161,4 @@
     padding: 18px 24px;
     font-size: 0.9375rem;
   }
-
 }

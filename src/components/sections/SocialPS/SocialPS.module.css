@@ -4,6 +4,7 @@
   height: 59.1875rem;
   display: flex;
   flex-direction: column;
+  padding: 20px;
   gap: 0.5rem;
 }
 
@@ -40,196 +41,216 @@
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 0.5rem;
-  margin: 0 16px;
 }
 
-  /* .content_text {
-    display: flex;
-    padding: 60px;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 2rem;
-  }
+.content__text {
+  padding: 60px;
+  border-radius: 32px;
+  background: #fff;
+  max-width: 614px;
+}
 
-  .prupleImg {
-    position: absolute;
-    width: 27%;
-    right: 0rem;
-    top: 0rem;
-  }
+.text__subcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 83%;
+}
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text__container__title {
+  color: #141414;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.8px;
+}
+
+.paragraph__contaier {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paragraph__contaier__text {
+  color: #444;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.text__container {
   height: 100%;
+  width: 100%;
+}
+
+.beDealer {
+  padding: 18px 24px;
+  border-radius: 20px;
+  border: none;
+  background: #4842fb;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px;
+}
+.content__img {
+  display: flex;
+  align-items: center;
+  max-height: 637px;
+  max-width: 50%;
+}
+
+.content__img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;  
+  object-fit: cover;
+}
+
+@media (max-width: 1120px) {
+  .content{
+    max-height: 593px;
+    height: 100%;
+  }
+  .content__text { 
+    padding: 42px;
+    }
+}
+
+@media (max-width: 900px) {
+  .rectangle{
+    padding: 0;
   }
 
-  .text__container_title {
-    color: #141414;
-    font-family: Inter;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: -0.05rem;
-    margin-bottom: 2.5rem;
-    margin-top: 0;
+  .content{
+    max-height: 498px;
+    height: 100%;
+    padding: 0 20px;
   }
 
-  .text__container_paragraph {
-    color: #333;
-    font-family: Poppins;
-    font-size: 1.25rem;
-    font-style: normal;
-    line-height: 140%;
-    margin-bottom: 0;
-  }
-
-  .beDealer {
-    border-radius: 1.25rem;
-    background: #4842fb;
-    padding: 1.125rem 1.5rem;
-    color: rgba(255, 255, 255, 1);
-    border: 0;
-    font-family: Poppins;
-    font-style: normal;
-    font-size: 1.125rem;
-    font-weight: 500;
-    max-width: clamp(12.8rem, 2vw, 9rem);
-  } */
   .content__text{
-    padding: 60px;
-    border-radius: 32px;
-    background: #FFF;
+    max-width: 340px;
+    width: 100%;
+    padding: 32px;
   }
 
   .text__subcontent{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
     height: 75%;
-    }
-
-  .text__container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  }
+  
+  .header__title{
+    font-size: 52px;
   }
 
   .text__container__title{
-    color: #141414;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 44px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 35.2px;
     letter-spacing: -0.8px;
   }
 
-  .paragraph__contaier{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
   .paragraph__contaier__text{
-    color: #444;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-  }
-  .text__container{
-    height: 100%;
-    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22.4px;
   }
 
   .beDealer{
-    padding: 18px 24px;
-    border-radius: 20px;
-    border: none;
-    background: #4842FB;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
     line-height: 25.2px;
+    font-size: 18px;
   }
-  .content__img img {
-  border-radius: 2rem;
+
+  .content__img{
+    width: 379px;
   }
+}
 
 @media (max-width: 500px) {
   .rectangle {
     margin-top: 40px;
+    padding: 0;
   }
-  .header__squeare_text{
+  .header__squeare_text {
     padding: 0.75rem 1rem;
     font-size: 0.875rem;
   }
-
-  .header__title{
+  
+  .header__title {
     max-width: 22.5rem;
     text-align: center;
     font-size: 2.125rem;
     line-height: 2.125rem;
   }
-
-  .content{
+  
+  .content {
     flex-direction: column-reverse;
+    padding: 0;    
+    max-height: unset;
+    height: unset;
   }
-
-  .content__text{
+  
+  .content__text {
+    max-width: unset;
+    max-height: unset;
+    width: unset;
+    height: unset;
     padding: 32px;
+    margin: 0 16px;
+
   }
-  .text__container{
+  .text__container {
     display: flex;
     align-content: center;
     align-items: flex-start;
     gap: 32px;
   }
 
-  .text__subcontent{
+  .text__subcontent {
     gap: 16px;
   }
 
-  .text__container__title{
+  .text__container__title {
     font-size: 28px;
     line-height: 30.8px;
     margin: 0;
     letter-spacing: -0.5px;
   }
 
-  .paragraph__contaier__text{
+  .paragraph__contaier__text {
     font-size: 15px;
     line-height: 21px;
     margin: 0;
-
   }
 
-  .beDealer{
+  .beDealer {
     font-size: 16px;
     font-weight: 500;
     padding: 1.125rem 1.5rem;
   }
 
-  .content__img{
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
+  .content__img {
+    margin: 0 16px;
+    max-width: 379px;
+    max-height: 498px;
+    width: unset;
+    height: unset;
   }
-  
+
   .content__img img {
     border-radius: 2rem;
     width: 100%;

@@ -217,6 +217,11 @@
   gap: 12px;
 }
 
+.text__content img{
+  width: 52px;
+  height: 52px;
+}
+
 .text__subcontent{
   display: flex;
   flex-direction: column;
@@ -266,15 +271,81 @@
 .video {
   width: 100%;
   height: 100%;
-  border-radius: 28px;  object-fit: cover;
+  border-radius: 28px;  
+  object-fit: cover;
 }
+@media (max-width: 900px) {
+  .rectangle{
+    margin-top: 0;
+  }
+  .user__container{
+    max-height: 471px;
+  }
 
+  .header{
+    margin-bottom: 46px;
+  }
+
+  .steps{
+    gap: 77px;
+  }
+  .steps__one img,
+  .steps__two img {
+    display: none;
+  }
+
+  .step__img__container__two{
+    display: none;
+  }
+
+  .text__section{
+    padding: 32px;
+  }
+  
+  .content__number{
+    margin: 0;
+  }
+  .container__text__anchor, .container__text__paragraph, .container__text__title{
+    margin: 0;
+  }
+  .text__title{
+    font-size: 32px;
+    line-height: 35.2px;
+    letter-spacing: -0.8px;
+    margin: 0;
+  }
+
+  .text__paragraph{
+    font-size: 14px;
+    line-height: 19.6px;
+    margin: 0;
+  }
+
+  .beDealer{
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    padding: 18px 32px;
+  }
+  
+  .video__container{
+    max-width: 282px;
+  }
+}
 @media (max-width: 500px) {
+  .rectangle{
+    margin-top: 6rem;
+  }
+
+  .header{
+    margin-bottom: 48px;
+  }
+
   .header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 12rem;
+    margin-top: 13rem;
     height: 19.62525rem;
     overflow: hidden;
     gap: 0.81rem;
@@ -366,6 +437,7 @@
 
   .user__container {
     flex-direction: column;
+    max-height: unset;
     margin-top: 83px;
     gap: 32px;
   }
@@ -381,6 +453,11 @@
     letter-spacing: -0.05rem;
     margin-bottom: 2rem;
     margin: 0 16px;
+  }
+
+  .video__container {
+  max-height: unset;
+  max-width: unset;
   }
 
   .video {
