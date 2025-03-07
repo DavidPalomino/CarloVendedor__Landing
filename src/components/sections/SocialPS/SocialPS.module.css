@@ -1,11 +1,10 @@
 .rectangle {
   width: 100%;
-  margin-top: 6rem;
-  height: 59.1875rem;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 80px 44px 80px 44px;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .header {
@@ -30,93 +29,27 @@
 .header__title {
   color: #141414;
   font-family: Inter;
-  font-size: 4rem;
+  text-align: center;
+  font-size: 48px;
   font-weight: 700;
-  line-height: 4rem;
-  letter-spacing: -0.05rem;
+  line-height: 48px;
+  letter-spacing: -1.28px;
   margin-top: 0.81rem;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
-.content__text {
-  position: relative;
-  padding: 60px;
-  border-radius: 32px;
-  background: #fff;
-  max-width: 614px;
-  overflow: hidden;
-}
-
-.social__deco{
-  position: absolute;
-  width: 196px;
-  top: 0;
-  right: 0;
-}
-
-.text__subcontent {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  height: 83%;
-}
-
-.text__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.text__container__title {
-  color: #141414;
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 44px;
-  letter-spacing: -0.8px;
-}
-
-.paragraph__contaier {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.paragraph__contaier__text {
+.header__paragraph{
   color: #444;
-  font-family: Poppins;
-  font-size: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-}
-.text__container {
-  height: 100%;
-  width: 100%;
+  line-height: 24px;
+  letter-spacing: -1px;
+  margin: 0;
 }
 
-.beDealer {
-  padding: 18px 24px;
-  border-radius: 20px;
-  border: none;
-  background: #4842fb;
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 25.2px;
-}
 .content__img {
   display: flex;
   align-items: center;
@@ -131,61 +64,36 @@
   object-fit: cover;
 }
 
+.beDealerButton {
+  background: #4842FB;
+  margin-top: 60px;
+  padding: 18px 24px;
+  border-radius: 20px;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #FFF;
+  font-style: normal;
+}
+
 @media (max-width: 1120px) {
   .content{
     max-height: 593px;
     height: 100%;
   }
-  .content__text { 
-    padding: 42px;
-    }
 }
 
 @media (max-width: 900px) {
   .rectangle{
-    padding: 0;
+    padding: 80px 0;
   }
 
   .content{
     max-height: 498px;
     height: 100%;
     padding: 0 20px;
-  }
-
-  .content__text{
-    max-width: 340px;
-    width: 100%;
-    padding: 32px;
-  }
-
-  .social__deco{
-    width: unset;
-  }
-
-  .text__subcontent{
-    height: 75%;
-  }
-  
-  .header__title{
-    font-size: 52px;
-  }
-
-  .text__container__title{
-    margin: 0;
-    font-size: 32px;
-    line-height: 35.2px;
-    letter-spacing: -0.8px;
-  }
-
-  .paragraph__contaier__text{
-    margin: 0;
-    font-size: 16px;
-    line-height: 22.4px;
-  }
-
-  .beDealer{
-    line-height: 25.2px;
-    font-size: 18px;
   }
 
   .content__img{
@@ -196,6 +104,7 @@
 @media (max-width: 500px) {
   .rectangle {
     margin-top: 40px;
+    margin-bottom: 40px;
     padding: 0;
   }
   .header__squeare_text {
@@ -206,62 +115,18 @@
   .header__title {
     max-width: 22.5rem;
     text-align: center;
-    font-size: 2.125rem;
-    line-height: 2.125rem;
-  }
-  
-  .content {
-    flex-direction: column-reverse;
-    padding: 0;    
-    max-height: unset;
-    height: unset;
-  }
-  
-  .social__deco{
-    width: 102px;
-    right: -4px;
-  }
-  .content__text {
-    max-width: unset;
-    max-height: unset;
-    width: unset;
-    height: unset;
-    padding: 32px;
-    margin: 0 16px;
-
-  }
-  .text__container {
-    display: flex;
-    align-content: center;
-    align-items: flex-start;
-    gap: 32px;
-  }
-
-  .text__subcontent {
-    gap: 16px;
-  }
-
-  .text__container__title {
     font-size: 28px;
     line-height: 30.8px;
-    margin: 0;
-    letter-spacing: -0.5px;
   }
-
-  .paragraph__contaier__text {
-    font-size: 15px;
-    line-height: 21px;
-    margin: 0;
-  }
-
-  .beDealer {
+  
+  .header__paragraph{
     font-size: 16px;
-    font-weight: 500;
-    padding: 1.125rem 1.5rem;
+    line-height: 17.6px;
+    letter-spacing: -1px;
   }
 
   .content__img {
-    margin: 0 16px;
+    margin: 16px 16px 0 16px;
     max-width: 379px;
     max-height: 498px;
     width: unset;
@@ -272,5 +137,11 @@
     border-radius: 2rem;
     width: 100%;
     height: 100%;
+  }
+
+  .beDealerButton {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-top: 40px;
   }
 }

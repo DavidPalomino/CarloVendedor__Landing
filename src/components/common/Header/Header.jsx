@@ -61,7 +61,7 @@ export const Header = ({windowSize}) => {
         {windowSize.width >= 500 ? (
         <div className={styles.buttons}>
           <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
-            Quiero ser dealer
+            Quiero cotizar
           </button>
           <button onClick={openMenu} className={`${styles.menuButton} ${!isTransparent && styles.visibleBorder}`}>
             <span className={styles.textWrapper}>
@@ -76,7 +76,7 @@ export const Header = ({windowSize}) => {
         ):(
           <div className={styles.buttons}>
           <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
-            Quiero ser dealer
+            Quiero cotizar
           </button>
           
           <button onClick={openMenu} className={`${styles.menuButton} ${ isTransparent ? styles.hidden : styles.visibleMenuButton}`}>
