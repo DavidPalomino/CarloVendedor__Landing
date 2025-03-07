@@ -29,7 +29,8 @@
 .beDealer {
   background-color: #fff;
   padding: 0.875rem 1.75rem;
-  border-radius: 20px;
+    border-radius: 14px;
+
   border: none;
   font-family: Poppins;
   font-weight: 500;
@@ -254,10 +255,6 @@ text-align: left;
 
   .footer__section__first, .footer__section__second, .footer__section__three{
     margin: 0;
-  }
-
-  .beDealer{
-    border-radius: 14px;
   }
 
   .footer__section__first{
