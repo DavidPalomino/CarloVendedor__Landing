@@ -1,7 +1,5 @@
-<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Frame 427318744">
-<rect id="Horizontal Divider" y="0.833008" width="12" height="1.33333" rx="0.666667" fill="#141414"/>
-<rect id="Horizontal Divider_2" y="4.83301" width="12" height="1.33333" rx="0.666667" fill="#141414"/>
-<rect id="Horizontal Divider_3" y="8.83301" width="12" height="1.33333" rx="0.666667" fill="#141414"/>
-</g>
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.75" y="2.91699" width="10.5" height="1.16667" rx="0.583333" fill="#141414"/>
+<rect x="1.75" y="6.41699" width="10.5" height="1.16667" rx="0.583333" fill="#141414"/>
+<rect x="1.75" y="9.91699" width="10.5" height="1.16667" rx="0.583333" fill="#141414"/>
 </svg>

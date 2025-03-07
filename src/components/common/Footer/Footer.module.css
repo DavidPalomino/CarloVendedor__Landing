@@ -147,8 +147,17 @@ text-align: left;
 
 @media (max-width: 1200px) {
   .footer__content{
-  max-width: 100%;
-  width: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .b p, .information p, .legal__links p{
+    margin: 0;
+    }
+  .footer__section__first, .footer__section__second, .footer__section__three{
+    width: unset;
+    margin: 0 20px;
   }
 }
 
@@ -175,6 +184,10 @@ text-align: left;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
+  }
+
+  .footer__section__three{
+    padding-bottom: 0;
   }
 
   .b p{
@@ -238,6 +251,11 @@ text-align: left;
     padding-left: 0;
     padding-right: 0;
   }
+
+  .footer__section__first, .footer__section__second, .footer__section__three{
+    margin: 0;
+  }
+
   .footer__section__first{
     flex-direction: column;
     gap: 2.5rem;

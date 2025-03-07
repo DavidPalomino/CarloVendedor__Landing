@@ -194,6 +194,7 @@
   .menuButton{
     font-size: 0.8125rem;
     transition: all 0.2s ease;
+    padding: 14px;
   }
 
   .beDealer{

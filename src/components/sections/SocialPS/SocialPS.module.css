@@ -78,6 +78,13 @@
   font-style: normal;
 }
 
+@media (max-width: 1200px) {
+  .rectangle{
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+
 @media (max-width: 1120px) {
   .content{
     max-height: 593px;

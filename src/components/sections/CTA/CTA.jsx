@@ -17,18 +17,17 @@ export const CTA = ({windowSize}) => {
       </div>
       ): (
         <div className={styles.CTA__content}>
-        <h1 className={styles.text}>Empieza hoy y {windowSize.width <= 500 ? <br/>:""}accede a los</h1>
+        <h1 className={styles.text}>Vender tu</h1>
         <h1 className={styles.text__jump}>
           <div className={`${styles.backLetters} ${styles.backTop}`} />
-          mejores autos
+          auto nunca 
         </h1>
         <h1 className={styles.text__jump}>
           <div className={`${styles.backLetters} ${styles.backBottom}`} />
-          en subasta
+          fue tan fácil.
         </h1>
         <p className={styles.text__paragraph}>
-          Nuevo stock cada día para que nunca te falte inventario. Filtra, puja
-          y gana las mejores unidades <b>sin intermediarios ni riesgos.</b>
+        Consigue la mejor oferta en tiempo récord y sin complicaciones. Nuestra tecnología te garantiza un proceso rápido, seguro y sin estrés.
         </p>
         <button className={styles.beDealerButton}>Quiero Vender</button>
       </div>
