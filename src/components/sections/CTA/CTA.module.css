@@ -43,7 +43,7 @@
     font-style: normal;
     font-weight: 450;
     line-height: 140%;
-    width: 56%;
+    width: 49%;
     margin-top: 1.56rem;
   }
 
@@ -74,7 +74,7 @@
 
 @media (max-width: 900px) {
   .CTAimg {
-    background-image: url("/src/assets/images/CTAImageTablet.jpg");
+    background-position: 63% 100%;
   }
   .text, .text__jump{
     margin: 0;
@@ -89,7 +89,7 @@
   .text__paragraph{
     font-size: 17px;
     line-height: 27px;
-    width: 71%;
+    width: 53%;
   }
   
   .backLetters{
