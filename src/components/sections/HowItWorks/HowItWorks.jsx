@@ -2,11 +2,13 @@ import styles from "./HowItWorks.module.css";
 import { useEffect, useRef, useState } from "react";
 
 import stepOneImg from "../../../assets/images/StepOne.svg";
-import stepTwoImg from "../../../assets/images/StepTwo.svg";
+import stepTwoImg from "../../../assets/images/StepTwo.png";
 import stepThreeImg from "../../../assets/images/StepThree.svg";
 import stepFourImg from "../../../assets/images/StepFour.svg";
 import checkIcon from "../../../assets/images/CheckIcon.svg";
 import socialVideo from "../../../assets/videos/SocialVideo.mp4";
+import stepFourDecoTop from "../../../assets/images/StepFourDecoTop.svg";
+import stepFourDecoBottom from "../../../assets/images/StepFourDeco.svg";
 export const HowItWorks = ({windowSize}) => {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
@@ -58,6 +60,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1 className={styles.container__text__title}>
                   Regístrate y verifica tu cuenta
                 </h1>
+                <div className={styles.subcontainer__text}>
                 <p className={styles.container__text__paragraph}>
                   Únete a CARLO Subastas y accede al mejor stock de autos
                   verificados. Completa tu registro y verifica tu cuenta para
@@ -66,10 +69,11 @@ export const HowItWorks = ({windowSize}) => {
                 <a className={styles.container__text__anchor}>
                   Regístrate ahora
                 </a>
+                </div>
               </div>
             </div>
           </div>
-          <div>
+          <div className={styles.step__img__container}>
             <img src={stepOneImg} />
           </div>
         </div>
@@ -86,7 +90,7 @@ export const HowItWorks = ({windowSize}) => {
                 <h1
                   className={`${styles.container__text__title} ${styles.stepTwo__title__color}`}
                 >
-                  Explora nuestro{windowSize.width <= 768 ? <br/>:""} stock de vehículos
+                  Explora nuestro{windowSize.width <= 500 ? <br/>:""} stock de vehículos
                 </h1>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
@@ -99,7 +103,7 @@ export const HowItWorks = ({windowSize}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className={styles.step__img__container__two}>
             <img src={stepTwoImg} className={styles.macImg} />
           </div>
         </div>
@@ -119,7 +123,7 @@ export const HowItWorks = ({windowSize}) => {
               </div>
             </div>
           </div>
-          <div>
+          <div className={styles.step__img__container}>
             <img src={stepThreeImg} />
           </div>
         </div>
@@ -127,6 +131,7 @@ export const HowItWorks = ({windowSize}) => {
           <div
             className={`${styles.content__text} $ ${styles.stepTwo__container__color}`}
           >
+            <img src={stepFourDecoTop} className={styles.stepFourDecoTop}/>
             <div className={styles.text__container}>
               <h1
                 className={`${styles.content__number} ${styles.stepTwo__number__color}`}
@@ -139,6 +144,7 @@ export const HowItWorks = ({windowSize}) => {
                 >
                   Completa la compra y recoge tu auto
                 </h1>
+                <div className={styles.subcontainer__text}>
                 <p
                   className={`${styles.container__text__paragraph} ${styles.stepTwo__paragraph__color}`}
                 >
@@ -152,27 +158,31 @@ export const HowItWorks = ({windowSize}) => {
                   Quiero ser dealer
                 </a>
               </div>
+              </div>
             </div>
+            <img src={stepFourDecoBottom} className={styles.stepFourDecoBottom}/>
           </div>
-          <div>
+          <div className={styles.step__img__container}>
             <img src={stepFourImg} />
           </div>
         </div>
       </div>
       <div className={styles.user}>
         <div className={styles.user__container}>
-          {windowSize.width >= 768 ?
-          <div className={styles.user__content}>
-            <img src={checkIcon} className={styles.user__content__icon}/>
-            <div className={styles.user__content__text}>
-            <h1 className={styles.user__content__title}>Te contamos cómo comprar con total seguridad</h1>
-            <p className={styles.user__content__paragraph}>Aprende en minutos cómo registrarte, explorar el stock de vehículos y participar en subastas en tiempo real. </p>
-            <p className={styles.user__content__paragraph}>Descubre lo fácil y seguro que es comprar autos verificados para tu negocio.</p>
+          {windowSize.width >= 500 ?
+          <section className={styles.text__section}>
+            <div className={styles.text__content}>
+              <img src={checkIcon}/>
+              <div className={styles.text__subcontent}>
+              <h1 className={styles.text__title}>Te contamos cómo <br/> comprar con total<br/> seguridad</h1>
+              <p className={styles.text__paragraph}>Aprende en minutos cómo registrarte, explorar el stock de vehículos y participar en subastas en tiempo real.</p>
+              </div>
+              <p className={styles.text__paragraph}>Descubre lo fácil y seguro que es comprar autos verificados para tu negocio.</p>
             </div>
             <button className={styles.beDealer}>Quiero ser dealer</button>
-          </div>
+          </section>
            : ""}
-           {windowSize.width <= 768 ? 
+           {windowSize.width <= 500 ? 
            <h1 className={styles.video__title}>Te contamos cómo comprar con total seguridad</h1>
             : ""}
           <section className={styles.video__container} onClick={handleToggleSound}>
@@ -184,7 +194,7 @@ export const HowItWorks = ({windowSize}) => {
                 <source src={socialVideo} type="video/mp4" />
               </video>
           </section>
-          {windowSize.width <= 768 ? 
+          {windowSize.width <= 500 ? 
            <button className={styles.beDealer}>Quiero ser dealer</button>
             : ""}
         </div>

@@ -14,7 +14,7 @@ export const Footer = ({windowSize}) => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-    {windowSize.width > 768 ? (
+    {windowSize.width > 900 ? (
       <section className={styles.footer__section__first}>
          <div className={styles.a}>
             <img src={logo} className={styles.logo}/>
@@ -90,7 +90,7 @@ export const Footer = ({windowSize}) => {
       <section className={styles.footer__section__three}>
       <div className={styles.information}>
         <img src={CopyRightIcon}/>
-        <p className={styles.copyright__text}>MOVE TECHNOLOGIES S.A.C. 20603667451</p>
+        <p className={styles.copyright__text}>MOVE TECHNOLOGIES {windowSize.width <= 360 ? <br/>:""} S.A.C. 20603667451</p>
       </div>
       <div className={styles.legal__links}>
         <p>Avisos legales</p>

@@ -15,26 +15,22 @@ export const SocialPS = ({windowSize}) => {
         <div className={styles.content__img}>
           <img src={socialImg} />
         </div>
-        <div className={styles.content_text}>
-          <img src={windowSize > 768 ? purpleThing : prupleImgMobile} className={styles.prupleImg} />
-          <div className={styles.container}>
-            <div className={styles.text__container}>
-              <h1 className={styles.text__container_title}>
-                Que tu negocio no {windowSize.width <= 768 ? <br/>:""}pare: compra autos {windowSize.width <= 768 ? <br/>:""} verificados
-              </h1>
-              <p className={styles.text__container_paragraph}>
-                En CARLO, subastamos vehículos inspeccionados directamente de
-                particulares, para que puedas comprar con confianza y garantía.
-                No subastamos vehículos siniestrados ni recuperados por
-                financieras, solo vehículos verificados.
-              </p>
-              <p className={styles.text__container_paragraph}>
-                Tu próxima oportunidad está a un clic de distancia.
-              </p>
+        <section className={styles.content__text}>
+          {windowSize >= 901 ?
+          <img src={purpleThing} className={styles.social__deco}/> :
+          <img src={prupleImgMobile} className={styles.social__deco}/>
+          }
+          <div className={styles.text__container}>
+            <div className={styles.text__subcontent}>
+            <h1 className={styles.text__container__title}>Que tu negocio no <br/>pare: compra autos verificados</h1>
+            <div className={styles.paragraph__contaier}>
+              <p className={styles.paragraph__contaier__text}>En CARLO, subastamos vehículos inspeccionados directamente de particulares, para que puedas comprar con confianza y garantía. No subastamos vehículos siniestrados ni recuperados por financieras, solo vehículos verificados.</p>
+              <p className={styles.paragraph__contaier__text}>Tu próxima oportunidad está a un clic de distancia.</p>
+            </div>
             </div>
             <button className={styles.beDealer}>Quiero ser dealer</button>
           </div>
-        </div>
+        </section>
       </div>
       <div>
       <BrandCarrusel/>

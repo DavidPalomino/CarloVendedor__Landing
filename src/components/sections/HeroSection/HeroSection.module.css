@@ -1,20 +1,21 @@
 .heroImg {
-  background-image: url("/src/assets/images/HeroImg.jpg");
+  background-image: url("/src/assets/images/HeroBackground.jpg");
   background-size: cover;
-  background-position: right;
+  background-position: 50%;;
   display: flex;
   justify-content: center;
   height: 750px;
-  width: 100%;
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
+  gap: 55px;
   max-width: 1232px;
   width: 100%;
+  padding-left: 20px;
 }
 
 .text__container {
@@ -22,14 +23,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 41px;
 }
 
 .text {
   position: relative;
   font-family: Inter;
-  font-size: 3.75rem;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
+  letter-spacing: -1.28px;;
   position: relative;
   color: white;
   z-index: 0;
@@ -48,6 +51,7 @@
   line-height: 140%;
   font-style: normal;
   color: black;
+  margin: 10px;
 }
 
 .backLetters {
@@ -59,7 +63,7 @@
 }
 
 .backTop {
-  width: 107%;
+  width: 104%;
   margin-top: 0.3rem;
   transform: rotate(0.714deg);
 }
@@ -70,17 +74,61 @@
   transform: rotate(-1.446deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .heroImg {
+    background-image: url('../../../assets/images/HeroBackgroundTable.jpg');
+    background-position: 50% 100%;
+  }
+  .heroContent {
+    gap: 118px;
+  }
+
+  .text__container{
+    margin-top: 44px;
+  }
+  .text {
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -1.28px;
+  }
+
+  .backLetters {
+    left: -0.5rem;
+  }
+
+  .backTop {
+    width: 104%;
+    height: 65.501px;
+    margin-top: 0;
+    transform: rotate(0.714deg);
+  }
+  
+  .backBottom {
+    width: 105%;
+    margin-top: 0.4rem;
+    height: 53.647px;
+    transform: rotate(-0.727deg);
+  }
+  
+
+}
+
+@media (max-width: 500px) {
   .heroImg {
     background-image: url('../../../assets/images/HeroMobileBackground.jpg');
-  justify-content: flex-start;
+    justify-content: flex-start;
+    height: 651px;
     }
 
   .heroContent {
     padding-left: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 2.5rem;
+    gap: 36px;
+  }
+
+  .text__container{
+    margin-top: 105px;
   }
   .text {
     font-size: 2.6rem;
@@ -89,6 +137,7 @@
   }
 
   .backLetters {
+    margin-top: 0.3rem;
     height: 2.75rem;
     left: -0.5rem;
   }
@@ -113,5 +162,4 @@
     padding: 18px 24px;
     font-size: 0.9375rem;
   }
-
 }

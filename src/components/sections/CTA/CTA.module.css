@@ -72,11 +72,38 @@
     transform: rotate(0.447deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .CTAimg {
+    background-image: url("/src/assets/images/CTAImageTablet.jpg");
+  }
+  .text, .text__jump{
+    margin: 0;
+  }
+
+  .text, .text__jump{
+    font-size: 48px;
+    line-height: 57.6px;
+    letter-spacing: -1.28px;
+  }
+
+  .text__paragraph{
+    font-size: 17px;
+    line-height: 27px;
+    width: 71%;
+  }
+  
+  .backLetters{
+    margin-top: 0;
+    width: 104%;
+  }
+}
+
+@media (max-width: 500px) {
   .CTAimg{
     background-image: url("/src/assets/images/CTAImageMobile.jpg");
     background-size: cover;
     height: 485px;
+    margin-top: 80px;
   }
 
   .text ,.text__jump {
@@ -89,10 +116,10 @@
 
   .text__paragraph{
     align-self: stretch;
-    font-size: 0.95rem;
-    line-height: 1.225rem;
+    font-size: 15px;
+    line-height: 150%;
     width: 100%;
-    margin: 1.56rem 0 0 0;
+    margin: 1.56rem 0 0;
     padding: 0;
   }
 

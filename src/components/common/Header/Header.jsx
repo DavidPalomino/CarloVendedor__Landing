@@ -58,7 +58,7 @@ export const Header = ({windowSize}) => {
           src={logo}
           className={`${styles.header__logo} ${(!isTransparent ? styles.invertLogoColor : {})}`}
         />
-        {windowSize.width >= 768 ? (
+        {windowSize.width >= 500 ? (
         <div className={styles.buttons}>
           <button className={`${styles.beDealer} ${ isTransparent ? styles.hidden : styles.visible}`}>
             Quiero ser dealer
@@ -96,38 +96,10 @@ export const Header = ({windowSize}) => {
       </div>
     </div>
     {isMenuOpen ? (
-      <div className={styles.menu}>
-        <div className={styles.menu__container}>
-        <div className={styles.menu__content}>
-          <section className={styles.items__section}>
-           <div className={styles.item}>
-             <img src={menuItemOne}/>
-           </div>
-           <div className={styles.item}>
-           <img src={menuItemTwo}/>
-           </div>
-         </section>
-         <section className={styles.links__content}>
-          <section className={styles.text__items}>
-          <p className={styles.item__text}>Servicios</p>
-          <p className={styles.item__text}>Subastas</p>
-          <p className={styles.item__text}>¿Cómo vender mi auto?</p>
-          <p className={styles.item__text}>¿Cómo ser Dealer?</p>
-          <p className={styles.item__text}>Premios y certificados</p>
-          <p className={styles.item__text}>Preguntas frecuentes</p>
-          </section>
-          <section className={styles.social__icons}>
-            <a href="#" className={styles.icon}> <img src={fbIcon} /> </a>
-            <a href="#" className={styles.icon}> <img src={igIcon} /> </a>
-            <a href="#" className={styles.icon}> <img src={tiktokIcon} /> </a>
-          </section>
+      <section className={styles.menu}>
+        
       </section>
-        </div>
-        </div>
-      </div>
-    ) : (
-      <></>
-    )}
+    ) : ""}
     </>
   );
 };

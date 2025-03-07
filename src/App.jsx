@@ -31,7 +31,7 @@ function App() {
     <>
     <Header  windowSize={windowSize}/>
     <HeroSection windowSize={windowSize}/>
-    {windowSize.width > 768 ? (
+    {windowSize.width > 500 ? (
     <div>
     <main className="container">
     <SocialPS windowSize={windowSize}/>
